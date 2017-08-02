@@ -76,7 +76,7 @@ input:not([type]), input[type="email" i], input[type="number" i], input[type="pa
 /*Header styles*/
 
 header {
-    background-image: url(../img/bg.png);
+    background-image: url(./img/bg.png);
     background-position: center;
     /*height: 11.25rem;*/
     /*background-size: 128px 128px;*/
@@ -413,7 +413,7 @@ ul.header-bottom_navigation-menu {
 .search-button {
     width: 40px;
     background-color: #fff;
-    /*background-image: url(../img/search.svg);
+    /*background-image: url(./img/search.svg);
     background-repeat: no-repeat;
     background-position: center;*/
     color: rgba(0,0,0,0.3);
@@ -1662,7 +1662,7 @@ a.chip_close_link:hover .filters-selected_material_close_icon{
     color: #fff;
     background-color: #912268;
     border: none; 
-    background-image: url(../img/galka.png);
+    background-image: url(./img/galka.png);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -1685,7 +1685,7 @@ input.find_color{
     max-width: 100%;
     box-sizing: border-box;
     height: 2.5rem;
- /*   background-image: url(../img/search.svg);
+ /*   background-image: url(./img/search.svg);
     background-repeat: no-repeat;
     background-position: 97% 50%;*/
     padding-left: 0.625rem;
@@ -2142,7 +2142,7 @@ input.find_color[placeholder] {
     text-overflow: '';
     -ms-appearance: none;
     appearance: none!important;
-    background: url(../img/arrow_down.svg) no-repeat 98% center; 
+    background: url(./img/arrow_down.svg) no-repeat 98% center; 
     background-size: 1.875rem;
 }
 
@@ -2192,7 +2192,7 @@ input.find_color[placeholder] {
     text-overflow: '';
     -ms-appearance: none;
     appearance: none!important;
-    background: url(../img/arrow_down.svg) no-repeat 98% center; 
+    background: url(./img/arrow_down.svg) no-repeat 98% center; 
     background-size: 1.875rem;
 }
 
@@ -2659,7 +2659,7 @@ button.next-button:hover{
 
 .catalog-footer {
     font-family: 'Conv_FuturaPTBook',Sans-Serif;
-    background-image: url(../img/bg.png);
+    background-image: url(./img/bg.png);
     background-position: center;
     /*min-height: 28.75rem;*/
     color: #fff;
@@ -2670,7 +2670,7 @@ button.next-button:hover{
 
 .product-footer {
     font-family: 'Conv_FuturaPTBook',Sans-Serif;
-    background-image: url(../img/bg.png);
+    background-image: url(./img/bg.png);
     background-position: center;
   /*  min-height: 28.75rem;*/
     color: #fff;
@@ -2827,7 +2827,7 @@ footer p {
 }
 
 .fast-view_button{
-    background: url(../img/eye.svg);
+    background: url(./img/eye.svg);
     background-position: 10% 49%;
     background-repeat: no-repeat;
 }
@@ -2928,7 +2928,7 @@ button.mfp-close{
 }
 
 .input-number .popup_minus {
-/*    background: url(../img/ic_remove_white.svg) no-repeat 50% 50%;*/
+/*    background: url(./img/ic_remove_white.svg) no-repeat 50% 50%;*/
     width: 1.875em;
     height: 2.5em;
     border: 2px solid rgba(255,255,255,0.1);
@@ -2954,7 +2954,7 @@ button.mfp-close{
 }
 
 .input-number .popup_plus {
-   /* background: url(../img/ic_add_white.svg) no-repeat 50% 50%;*/
+   /* background: url(./img/ic_add_white.svg) no-repeat 50% 50%;*/
     width: 1.875em;
     height: 2.5em;
     border: 2px solid rgba(255,255,255,0.1);
@@ -3077,7 +3077,7 @@ a.popup_buy {
     text-overflow: '';
     -ms-appearance: none;
     appearance: none!important;
-    background: url(../img/arrow-down_white.svg) no-repeat 98% center; 
+    background: url(./img/arrow-down_white.svg) no-repeat 98% center; 
     background-size: 1.875rem;
     /*border: 2px solid rgb(230,230,230); */
     background-color: rgba(255,255,255,0.1);
@@ -3210,7 +3210,7 @@ a.popup_buy {
 
 
 .product-card .input-number .popup_minus {
-    background: url(../img/ic_remove.svg) no-repeat 50% 50%;
+    background: url(./img/ic_remove.svg) no-repeat 50% 50%;
     width: 1.875em;
     height: 2.5em;
     border: 2px solid rgb(230,230,230);
@@ -3225,7 +3225,7 @@ a.popup_buy {
 }
 
 .product-card .input-number .popup_plus {
-    background: url(../img/ic_add.svg) no-repeat 50% 50%;
+    background: url(./img/ic_add.svg) no-repeat 50% 50%;
     width: 1.875em;
     height: 2.5em;
     border: 2px solid rgb(230,230,230);
@@ -3330,7 +3330,7 @@ a.popup_buy {
     text-overflow: '';
     -ms-appearance: none;
     appearance: none!important;
-    background: url(../img/arrow_down.svg) no-repeat 98% center; 
+    background: url(./img/arrow_down.svg) no-repeat 98% center; 
     background-size: 1.875rem;
     border: 2px solid rgb(230,230,230);
 }
@@ -3989,7 +3989,7 @@ button {
     padding-left: 0.625rem;
 }
 /*.mfp-bg {
-   background-image: url(../img/bg-purple.jpg);
+   background-image: url(./img/bg-purple.jpg);
    background-position: center;
 }*/
 
@@ -4000,7 +4000,7 @@ button {
     top: 0;
     left: 0;
     z-index: 2;
-    background-image: url(../img/bg.png);
+    background-image: url(./img/bg.png);
 }
 
 .menu_mobile_background {
@@ -4076,7 +4076,7 @@ button {
     top: 0;
     left: 0;
     z-index: 2;
-    background-image: url(../img/bg.png);
+    background-image: url(./img/bg.png);
 }
 
 .menu_mobile-user-title , .menu_mobile-user-close{
@@ -4140,7 +4140,7 @@ a.clear-filters:hover {
 }
 
 /*body {
-    background: url(../img/grid.png);
+    background: url(./img/grid.png);
 }*/
 
 .collapsed {
@@ -4341,7 +4341,7 @@ input#lots_search:focus{
         text-overflow: '';
         -ms-appearance: none;
         appearance: none!important;
-        background: url(../img/arrow_drop_down-white.svg) no-repeat ; 
+        background: url(./img/arrow_drop_down-white.svg) no-repeat ; 
         background-position: 99% 70%;
         background-size: 1.25rem;
         background-color: rgba(0,0,0,0.3);
@@ -4349,7 +4349,7 @@ input#lots_search:focus{
     }
 
     .mobile-filter_filter{
-        background: url(../img/arrow_drop_down-white.svg) no-repeat ; 
+        background: url(./img/arrow_drop_down-white.svg) no-repeat ; 
         background-position: 99% 70%;
         background-size: 1.25rem;
 
@@ -4469,7 +4469,7 @@ input#lots_search:focus{
     text-overflow: '';
     -ms-appearance: none;
     appearance: none!important;
-    background: url(../img/arrow_down.svg) no-repeat 98% center;
+    background: url(./img/arrow_down.svg) no-repeat 98% center;
     background-size: 1.875rem;
 }
 
