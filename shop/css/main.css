@@ -1,0 +1,224 @@
+/* --------------------------
+AUTHOR : STYLED MENUS
+URL : http://www.styledmenus.com
+Copyrights by STYLED MENUS
+----------------------------*/
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#fff;
+	color:#666;	
+	font:12px/18px Tahoma, Arial, Helvetica, sans-serif;	
+}
+	#menu{
+		background:#fff;
+		width:100%;
+		border:1px solid #cccccc;
+		padding:3px;
+		margin:0 0 0 15px;
+	}
+		#menu ul{
+			list-style:none;
+		}
+			#menu li{
+				list-style:none;
+				display:block;
+				border-bottom:1px solid #ffce88;
+			}
+				#menu li a{
+					list-style:none;
+					display:block;
+					background:#fbd346 url(../img/menu_006_bg.jpg) repeat-y left;
+					color:#fff;
+					text-transform:uppercase;
+					font-size:1em;
+					text-decoration:none;
+					padding:5px 5px 10px 15px;
+					font-weight: bold;
+				}
+					#menu li a:hover{
+						background:#f7941d url(../img/menu_006_h.jpg) repeat-x top;
+						color:#fff;
+						text-decoration:none;
+					}
+				#menu li.current{
+					list-style:none;
+					display:block;
+					background:#f7941d url(../img/menu_006_h.jpg) repeat-x top;
+					color:#fff;
+					text-transform:uppercase;
+					font-size:11px;
+					text-decoration:none;
+					padding:5px 5px 10px 15px;
+				}
+					#menu li.current, #menu li:hover.current{
+						background:#f7941d url(../img/menu_006_h.jpg) repeat-x top;
+						color:#fff;
+						text-decoration:none;					
+					}
+a.nav-active {
+    color:#ccc;
+}
+
+.waypoint_current{
+	background-color: red;
+}
+
+body{
+	background-image:  url(../img/bg.jpg);
+	background-attachment: fixed;
+	color: black;
+}
+header{
+	font-family: 'Roboto', sans-serif;
+	height: 150px;
+	width: 100%;
+	padding-bottom: 0;
+	outline: solid black;
+	border: black;
+	background-color: rgba(255,248,226,0.9);
+	overflow: hidden;
+	z-index: 100;
+}
+
+.page-header{
+	margin-top:0;
+	padding-top: 1.5em;
+}
+
+header h1{
+	
+	margin-left: 6em;
+
+}
+
+.header-img{
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 10px;
+	float: left;
+	margin-top: 5px;
+}
+
+
+.redline{
+	outline: solid red;
+}
+
+
+.main-content{
+	
+	border: red;
+	margin-bottom: 2em;
+	background-color: rgba(255,248,226,0.7);
+
+}
+
+nav{
+	position: fixed;
+	
+}
+
+#contacts{
+	width: 100%;
+	margin-bottom: 15em;
+}
+
+.catalog p{
+	text-align: justify;
+	text-indent: 1.5em;
+}
+
+.catalog h2{
+	margin-top:3em;
+}
+
+.catalog img{
+	max-width: 200px;
+	max-height: 120px;
+	border-radius: 10px;
+	margin: 0.5em;
+	padding: 5px;
+	opacity: 0.80;
+}
+
+
+
+footer{
+	background-color: rgba(255,248,226,0.7);
+}
+
+#map-canvas {
+z-index: 100;
+min-width:100%;
+width: auto;
+min-height:320px;
+margin-bottom: 0;
+padding-bottom: 0;
+margin-right: 0;
+padding-right: 0;
+overflow: hidden;
+}
+
+.menu-btn{
+	position:fixed;
+	background: rgb(163,255,125);
+	width: 120px;
+}
+
+
+
+.float-left{
+	float: left;
+}
+
+.float-right{
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+.professionalka ul{
+	list-style-type: disc;
+	padding-left: 1em;
+	
+}
+
+#prof_img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#hoztovary img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#contacts p,h2{
+	text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 544px) {
+	header{
+    	display:none;
+    }
+    img{
+    	display: none;
+    }
+    
+}
+
+/*
+@media screen and (max-width: 544px) {
+    map-canvas{
+    	max-width: 100%;
+    }
+}
+*/

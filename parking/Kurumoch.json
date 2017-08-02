@@ -1,0 +1,603 @@
+
+{
+  "response": {
+  "version":"0.1",
+  "termsofService":"http://www.wunderground.com/weather/api/d/terms.html",
+  "features": {
+  "geolookup": 1
+  ,
+  "conditions": 1
+  ,
+  "forecast": 1
+  }
+	}
+		,	"location": {
+		"type":"INTLCITY",
+		"country":"RS",
+		"country_iso3166":"RU",
+		"country_name":"Russia",
+		"state":"",
+		"city":"Kurumoch",
+		"tz_short":"EDT",
+		"tz_long":"America/New_York",
+		"lat":"53.49000168",
+		"lon":"50.04000092",
+		"zip":"00000",
+		"magic":"180",
+		"wmo":"WUWWW",
+		"l":"/q/zmw:00000.180.WUWWW",
+		"requesturl":"global/stations/WUWWW.html",
+		"wuiurl":"https://www.wunderground.com/global/stations/WUWWW.html",
+		"nearby_weather_stations": {
+		"airport": {
+		"station": [
+		{ "city":"", "state":"", "country":"", "icao":"", "lat":"", "lon":"" }
+		,{ "city":"Samara", "state":"", "country":"RS", "icao":"UWWW", "lat":"53.50490189", "lon":"50.16429901" }
+		]
+		}
+		,
+		"pws": {
+		"station": [
+		{
+		"neighborhood":"Unnamed Road",
+		"city":"Krasnyy Yar",
+		"state":"",
+		"country":"RU",
+		"id":"IKRASNYY2",
+		"lat":53.563000,
+		"lon":50.308750,
+		"distance_km":19,
+		"distance_mi":11
+		},
+		{
+		"neighborhood":"1-ya liniya",
+		"city":"Samara",
+		"state":"",
+		"country":"RS",
+		"id":"ISAMARA14",
+		"lat":53.292931,
+		"lon":50.219051,
+		"distance_km":24,
+		"distance_mi":14
+		},
+		{
+		"neighborhood":"Novo-Sadovaya ulitsa",
+		"city":"Samara",
+		"state":"",
+		"country":"RU",
+		"id":"ISAMARA12",
+		"lat":53.256989,
+		"lon":50.208858,
+		"distance_km":28,
+		"distance_mi":16
+		},
+		{
+		"neighborhood":"Finskaya ulitsa",
+		"city":"Samara",
+		"state":"",
+		"country":"RU",
+		"id":"ISAMARA3",
+		"lat":53.222904,
+		"lon":50.175968,
+		"distance_km":31,
+		"distance_mi":18
+		},
+		{
+		"neighborhood":"ulitsa Dybenko",
+		"city":"Samara",
+		"state":"",
+		"country":"RU",
+		"id":"ISAMARA10",
+		"lat":53.206924,
+		"lon":50.198612,
+		"distance_km":33,
+		"distance_mi":19
+		},
+		{
+		"neighborhood":"Samara",
+		"city":"Samara",
+		"state":"",
+		"country":"RS",
+		"id":"ISAMARA20",
+		"lat":53.190163,
+		"lon":50.083813,
+		"distance_km":33,
+		"distance_mi":20
+		},
+		{
+		"neighborhood":"Izmailovsky lane, Samara",
+		"city":"Самара",
+		"state":"Самарская область",
+		"country":"RU",
+		"id":"I1053",
+		"lat":53.188694,
+		"lon":50.215065,
+		"distance_km":35,
+		"distance_mi":21
+		},
+		{
+		"neighborhood":"Tolyatti",
+		"city":"Tol\u0027yatti",
+		"state":"",
+		"country":"RS",
+		"id":"ITOLYATT3",
+		"lat":53.482716,
+		"lon":49.474442,
+		"distance_km":37,
+		"distance_mi":22
+		}
+		]
+		}
+		}
+	}
+  ,	"current_observation": {
+		"image": {
+		"url":"http://icons.wxug.com/graphics/wu2/logo_130x80.png",
+		"title":"Weather Underground",
+		"link":"http://www.wunderground.com"
+		},
+		"display_location": {
+		"full":"Kurumoch, Russia",
+		"city":"Kurumoch",
+		"state":"",
+		"state_name":"Russia",
+		"country":"RS",
+		"country_iso3166":"RU",
+		"zip":"00000",
+		"magic":"180",
+		"wmo":"WUWWW",
+		"latitude":"53.49000168",
+		"longitude":"50.04000092",
+		"elevation":"60.0"
+		},
+		"observation_location": {
+		"full":"Samara, ",
+		"city":"Samara",
+		"state":"",
+		"country":"RS",
+		"country_iso3166":"RU",
+		"latitude":"53.50490189",
+		"longitude":"50.16429901",
+		"elevation":"476 ft"
+		},
+		"estimated": {
+		},
+		"station_id":"UWWW",
+		"observation_time":"Last Updated on October 20, 9:30 AM +04",
+		"observation_time_rfc822":"Thu, 20 Oct 2016 09:30:00 +0400",
+		"observation_epoch":"1476941400",
+		"local_time_rfc822":"Thu, 20 Oct 2016 01:55:02 -0400",
+		"local_epoch":"1476942902",
+		"local_tz_short":"EDT",
+		"local_tz_long":"America/New_York",
+		"local_tz_offset":"-0400",
+		"weather":"Scattered Clouds",
+		"temperature_string":"39 F (4 C)",
+		"temp_f":39,
+		"temp_c":4,
+		"relative_humidity":"87%",
+		"wind_string":"From the NNW at 4 MPH",
+		"wind_dir":"NNW",
+		"wind_degrees":340,
+		"wind_mph":4,
+		"wind_gust_mph":0,
+		"wind_kph":7,
+		"wind_gust_kph":0,
+		"pressure_mb":"1029",
+		"pressure_in":"30.39",
+		"pressure_trend":"0",
+		"dewpoint_string":"36 F (2 C)",
+		"dewpoint_f":36,
+		"dewpoint_c":2,
+		"heat_index_string":"NA",
+		"heat_index_f":"NA",
+		"heat_index_c":"NA",
+		"windchill_string":"36 F (2 C)",
+		"windchill_f":"36",
+		"windchill_c":"2",
+		"feelslike_string":"36 F (2 C)",
+		"feelslike_f":"36",
+		"feelslike_c":"2",
+		"visibility_mi":"6.2",
+		"visibility_km":"10.0",
+		"solarradiation":"--",
+		"UV":"1","precip_1hr_string":"-9999.00 in (-9999.00 mm)",
+		"precip_1hr_in":"-9999.00",
+		"precip_1hr_metric":"--",
+		"precip_today_string":"0.00 in (0.0 mm)",
+		"precip_today_in":"0.00",
+		"precip_today_metric":"0.0",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"forecast_url":"http://www.wunderground.com/global/stations/WUWWW.html",
+		"history_url":"http://www.wunderground.com/history/airport/UWWW/2016/10/20/DailyHistory.html",
+		"ob_url":"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=53.50490189,50.16429901",
+		"nowcast":""
+	}
+		,
+	"forecast":{
+		"txt_forecast": {
+		"date":"5:00 AM GMT",
+		"forecastday": [
+		{
+		"period":0,
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"title":"Thursday",
+		"fcttext":"A mix of clouds and sun during the morning will give way to cloudy skies this afternoon. High near 45F. Winds N at 5 to 10 mph.",
+		"fcttext_metric":"Some sun this morning with increasing clouds this afternoon. High 7C. Winds N at 10 to 15 km/h.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":1,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"Thursday Night",
+		"fcttext":"Mostly cloudy skies this evening will become partly cloudy after midnight. Low 32F. Winds light and variable.",
+		"fcttext_metric":"Partly to mostly cloudy. Low near 0C. Winds light and variable.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":2,
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"title":"Friday",
+		"fcttext":"Partly cloudy skies. High 42F. Winds light and variable.",
+		"fcttext_metric":"Sunshine and clouds mixed. High 6C. Winds light and variable.",
+		"pop":"10"
+		}
+		,
+		{
+		"period":3,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"Friday Night",
+		"fcttext":"Partly cloudy. Low 32F. Winds light and variable.",
+		"fcttext_metric":"Partly cloudy. Low near 0C. Winds light and variable.",
+		"pop":"0"
+		}
+		,
+		{
+		"period":4,
+		"icon":"mostlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+		"title":"Saturday",
+		"fcttext":"Mainly cloudy. High 42F. Winds light and variable.",
+		"fcttext_metric":"Mostly cloudy. High 6C. Winds light and variable.",
+		"pop":"0"
+		}
+		,
+		{
+		"period":5,
+		"icon":"nt_mostlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif",
+		"title":"Saturday Night",
+		"fcttext":"Mostly cloudy. Low near 30F. Winds light and variable.",
+		"fcttext_metric":"Considerable cloudiness. Low -1C. Winds light and variable.",
+		"pop":"20"
+		}
+		,
+		{
+		"period":6,
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"title":"Sunday",
+		"fcttext":"Partly cloudy skies. High 41F. Winds NE at 5 to 10 mph.",
+		"fcttext_metric":"Sunshine and clouds mixed. High near 5C. Winds NE at 10 to 15 km/h.",
+		"pop":"10"
+		}
+		,
+		{
+		"period":7,
+		"icon":"nt_partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif",
+		"title":"Sunday Night",
+		"fcttext":"Mostly cloudy skies early, then partly cloudy after midnight. Low 29F. Winds light and variable.",
+		"fcttext_metric":"Considerable clouds early. Some decrease in clouds late. Low -2C. Winds light and variable.",
+		"pop":"10"
+		}
+		]
+		},
+		"simpleforecast": {
+		"forecastday": [
+		{"date":{
+	"epoch":"1476975600",
+	"pretty":"11:00 AM EDT on October 20, 2016",
+	"day":20,
+	"month":10,
+	"year":2016,
+	"yday":293,
+	"hour":11,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"October",
+	"monthname_short":"Oct",
+	"weekday_short":"Thu",
+	"weekday":"Thursday",
+	"ampm":"AM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":1,
+		"high": {
+		"fahrenheit":"45",
+		"celsius":"7"
+		},
+		"low": {
+		"fahrenheit":"32",
+		"celsius":"0"
+		},
+		"conditions":"Partly Cloudy",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"skyicon":"",
+		"pop":20,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "N",
+		"degrees": 3
+		},
+		"avewind": {
+		"mph": 7,
+		"kph": 11,
+		"dir": "N",
+		"degrees": 3
+		},
+		"avehumidity": 77,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1477062000",
+	"pretty":"11:00 AM EDT on October 21, 2016",
+	"day":21,
+	"month":10,
+	"year":2016,
+	"yday":294,
+	"hour":11,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"October",
+	"monthname_short":"Oct",
+	"weekday_short":"Fri",
+	"weekday":"Friday",
+	"ampm":"AM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":2,
+		"high": {
+		"fahrenheit":"42",
+		"celsius":"6"
+		},
+		"low": {
+		"fahrenheit":"32",
+		"celsius":"0"
+		},
+		"conditions":"Partly Cloudy",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"skyicon":"",
+		"pop":10,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 5,
+		"kph": 8,
+		"dir": "NE",
+		"degrees": 41
+		},
+		"avewind": {
+		"mph": 4,
+		"kph": 6,
+		"dir": "NE",
+		"degrees": 41
+		},
+		"avehumidity": 72,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1477148400",
+	"pretty":"11:00 AM EDT on October 22, 2016",
+	"day":22,
+	"month":10,
+	"year":2016,
+	"yday":295,
+	"hour":11,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"October",
+	"monthname_short":"Oct",
+	"weekday_short":"Sat",
+	"weekday":"Saturday",
+	"ampm":"AM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":3,
+		"high": {
+		"fahrenheit":"42",
+		"celsius":"6"
+		},
+		"low": {
+		"fahrenheit":"30",
+		"celsius":"-1"
+		},
+		"conditions":"Mostly Cloudy",
+		"icon":"mostlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/mostlycloudy.gif",
+		"skyicon":"",
+		"pop":0,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 5,
+		"kph": 8,
+		"dir": "SE",
+		"degrees": 145
+		},
+		"avewind": {
+		"mph": 3,
+		"kph": 5,
+		"dir": "SE",
+		"degrees": 145
+		},
+		"avehumidity": 71,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		,
+		{"date":{
+	"epoch":"1477234800",
+	"pretty":"11:00 AM EDT on October 23, 2016",
+	"day":23,
+	"month":10,
+	"year":2016,
+	"yday":296,
+	"hour":11,
+	"min":"00",
+	"sec":0,
+	"isdst":"1",
+	"monthname":"October",
+	"monthname_short":"Oct",
+	"weekday_short":"Sun",
+	"weekday":"Sunday",
+	"ampm":"AM",
+	"tz_short":"EDT",
+	"tz_long":"America/New_York"
+},
+		"period":4,
+		"high": {
+		"fahrenheit":"41",
+		"celsius":"5"
+		},
+		"low": {
+		"fahrenheit":"29",
+		"celsius":"-2"
+		},
+		"conditions":"Partly Cloudy",
+		"icon":"partlycloudy",
+		"icon_url":"http://icons.wxug.com/i/c/k/partlycloudy.gif",
+		"skyicon":"",
+		"pop":10,
+		"qpf_allday": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_day": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"qpf_night": {
+		"in": 0.00,
+		"mm": 0
+		},
+		"snow_allday": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_day": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"snow_night": {
+		"in": 0.0,
+		"cm": 0.0
+		},
+		"maxwind": {
+		"mph": 10,
+		"kph": 16,
+		"dir": "NE",
+		"degrees": 50
+		},
+		"avewind": {
+		"mph": 6,
+		"kph": 10,
+		"dir": "NE",
+		"degrees": 50
+		},
+		"avehumidity": 72,
+		"maxhumidity": 0,
+		"minhumidity": 0
+		}
+		]
+		}
+	}
+}

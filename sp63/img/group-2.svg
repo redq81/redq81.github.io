@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <g fill="none" fill-rule="evenodd">
+        <rect width="20" height="20" fill="#912268" rx="3"/>
+        <text fill="#FFF" font-family="material" font-size="20">
+            <tspan x="0" y="17"></tspan>
+        </text>
+    </g>
+</svg>

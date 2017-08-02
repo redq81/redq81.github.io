@@ -1,0 +1,389 @@
+<!doctype html>
+<html class="no-js" lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content="Сайт организации стоянка аэропорт Курумоч" />
+    <meta name="google-site-verification" content="h_sfepN1FPrC2v8tOhoJuWCSKICglgYlirIGVNkEen4" />
+    <meta name="yandex-verification" content="73892e5c95ef12b9" />
+    <title>Парковка аэропорт Курумоч</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/foundation.css">
+    <link href='https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css' rel='stylesheet' type='text/css' /> 
+    <script src="https://code.jquery.com/jquery-1.9.1.js" type='text/javascript' ></script>
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js" type='text/javascript' ></script>
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head >
+  <body onload="startTime()" id='body'>
+ <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+ <![endif]-->
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter40258984 = new Ya.Metrika({
+                    id:40258984,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/40258984" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+    
+    <header id='header'>
+        <div class='top-hat wrapper'>
+      <div class='row medium-collapse large-collapse small-collapse'>
+        <div class='medium-4 small-12 columns clearfix '>
+          <div class='bg-white main-logo '>          
+              <a href='index.html'><img src="images/logo.png" alt="logo" class='float-left logo '></a>
+              <h4>Парковка <br>аэропорт Курумоч</h4>
+              <p id='phone'> <a href="tel:+79171617823">+7 917 161-78-23</a></p>
+          </div>
+        </div>
+      
+        <div class='medium-5 small-12 columns'>
+          <div id='date_calculator'>
+          <form action="form.html">
+            <div class='row medium-collapse large-collapse small-collapse'>
+              <div class='medium-5 columns '>
+                <div class='row'>
+                  <div class='medium-6 columns'>
+                    <div >
+                    <p>на стоянку</p>
+                    <input type='text' id='from' placeholder="Выберите дату" value='' />
+                    </div>
+                  </div>
+                  <div class='medium-6 columns'>
+                    <div >
+                    <p>со стоянки</p>
+                    <input type='text' id='to' placeholder="Выберите дату" value='' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class='medium-2 small-6 columns'>
+                <div id='result'></div>
+                <p id='sum'></p>
+              </div>
+              <div class='medium-5 small-6 columns '>
+                <div>
+                <button id='calculate' class='button'>Забронировать</button>
+                </div>
+              </div>
+
+            </div>
+          </form>
+          </div>    
+        </div>         
+      
+              <div class='medium-3 hide-for-small-only columns '>
+        <div class='header-plates'>
+          <div class='row medium-collapse large-collapse small-collapse'>
+            <div class='medium-7 hide-for-small-only columns clearfix'>
+              <div class=' header-top-left  small-plate'>
+              <p class="free">82%</p>
+              <p>свободно</p>  
+              </div>
+            </div>
+            <div class='medium-5 columns '>
+              <div class=' header-top-right small-plate'>
+              <p>время в </p>
+              <p>Самаре</p>
+              <div id='clock'><p></p></div>
+              </div>
+            </div>
+          </div>
+          <div class='row medium-collapse large-collapse small-collapse'>
+            <div class='medium-7 columns clearfix'>
+              <div class=' header-bottom-left  small-plate'>
+              <a href="auth.html" style="color:white"><img src="images/cam.png" alt="camera-logo" class='float-left ico header-camera'>
+              <p><span>показать стоянку</span></p></a>
+              </div>
+            </div>
+            <div class='medium-5 columns '>
+              <div class=' header-bottom-right small-plate'>
+              <div id='weather_informer'></div>
+              <p id='gradus'></p>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        </div> 
+      </div>
+      </div>
+    </header>
+    
+    
+    
+
+
+    <div class='content-wrapper'>
+      <div class='top-block'>
+            <div class='top-block-wrapper '>
+                <div class='plates0'>
+                    <div class='row medium-collapse large-collapse small-collapse'>      
+                
+                        <div class='row medium-collapse large-collapse small-collapse'>
+                      <div class='medium-3 small-6 columns '>
+                        <div class='fadein10'>
+                          <div class=' em10 top-block-middle'>
+                            <h1> 100 </h1>
+                            <p>рублей</p>
+                            <p>в сутки!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class='medium-3 small-6 columns clearfix'>
+                        <div class='fadein15'>
+                           <div class='em10 top-block-left'>
+                            <p>Бесплатный <br>трансфер <br>до аэропорта</p>
+                            <img src="images/arrow-1.png" alt="arrow">
+                            <a href="#how_fo_find"><p>как проехать?</p></a>
+                           </div>
+                        </div>
+                      </div>
+                      <div class='medium-6 small-12 columns '>
+                        <div class='fadein20'>
+                        <div class=' em10 top-block-right'>
+                          <img src="images/10minutes-1.png" alt="from A to B" class="car">
+                          <p>от стоянки до<br> аэропорта Курумоч</p>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>    
+              </div>
+                    <div class='row medium-collapse large-collapse small-collapse'>
+                      <div class='medium-4 medium-offset-1 hide-for-small-only columns'>
+                        <div class='top-block_left-text'>
+                        <p>Если вашему автомобилю нужно надежное и тихое местечко, пока вы отдыхаете или находитесь в деловой поездке, - наша парковка идеально подойдет.</p>
+                        </div>
+                      </div>
+                      <div class='medium-7 small-10 hide-for-small-only columns'>
+                        <div class='top-block_right-text' >
+                        <p>Стоянка находится <a class='go_to' href="#2_5_km" id="near_airport">недалеко</a> от терминала Международного Аэропорта Курумоч, основного авиационного узла города Самара. Всего лишь в течение минут 10 после того, как будет подписан договор оказания услуг охраняемой  стоянки, Вы будете стоять у ворот воздушной гавани. Ваш автомобиль останется дожидаться вас в <a class='go_to' href="#dog_and_camera" id='safe_place'> безопасном месте</a>.</p>
+                        </div>
+                      </div>
+                      </div>
+            
+          </div>  
+      </div>
+      </div>
+    <div class='back-2'>
+      <div class='wrapper'>
+          <div class='plates1 ' >
+               <div class='row medium-collapse large-collapse small-collapse'>          
+                <div class='medium-6 columns  clearfix'>
+                  <div class='transfer em10' >
+                  <img src="images/vasya-1.png" alt="transfer" class='vasya float-right'>
+                  <h4 >Бесплатный трансфер в любое время <br>дня и ночи</h4>
+                  <p >Можем даже написать табличку, чтобы вы точно узнали нас, когда вернетесь домой ;)</p>
+                  </div>
+                </div>
+                <div class='medium-3 small-6 columns '>
+                  <div class='em10 price'>
+                  <h4>Цена -</h4>
+                  <h5> такая же, как у других.</h5>
+                  <img src="images/parkprice-1.png" alt="price" class='float-left parkprice'>
+                 
+                    <p>Согласитесь,<br>это уже <br> неплохо )</p>
+                  </div>
+                </div>
+                <div class='medium-3 small-6 columns '>
+                  <div class='em10 distance' id="2_5_km">
+                  <h3 >2,5 км</h3>
+                  <p>от Аэровокзала</p>
+                  </div>
+                </div>
+                </div>
+          </div>
+            <div class='plates2' >
+              <div class='row medium-collapse large-collapse small-collapse'>
+        
+                <div class='medium-3 hide-for-small-only  columns '>
+                  <div class='em10-2 coffee'>
+                  <img src="images/cofee-1.png" alt="cofee" class='cofee'>
+                  <p>Бесплатный чай и печеньки :)</p>
+                  </div>
+                </div>
+                <div class='medium-3 hide-for-small-only columns '>
+                  <div class="em10-2 verybig">
+                  <h4>Наша стоянка по-настоящему большая</h4>
+                  <p>А значит, всегда есть свободные места</p>
+                  </div>
+                </div>
+                <div class='medium-6 columns '>
+                  <div class='em10-2 hangar'>
+                  <img src="images/angar-1.png" alt="hangar" class='angar'>
+                  <p>Размещение в крытом ангаре обеспечит защиту от палящего солнечного света летом или снежной бури зимой </p>
+                  </div>
+                </div>
+            </div>
+            </div>
+      
+            <div class='plates3'>
+              <div class='row medium-collapse large-collapse small-collapse'>  
+                <div class='medium-6 columns clearfix'>
+                  <div class='dog em5 ' id="dog_and_camera">
+                  <img src="images/camera1-1.png" alt="camera" class='float-left plates3_camera'>
+                  <img src="images/dog2-1.png" alt="dog" class='float-right plates3_dog' >
+                  <h4 >Круглосуточная охрана и видеонаблюдение</h4>
+                  </div>
+                </div>
+                <div class='medium-6 hide-for-small-only columns '>
+                  <div class='em5 justtext'>
+                  <p>Наша парковка у Курумоча обеспечит безопасность Вашего автомобиля вне зависимости от длительности вашей поездки!</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>  
+
+    <div class="row medium-collapse large-collapse small-collapse">
+      <div class="small-12 medium-12 large-12 columns">
+            
+             <div class="zoom-gallery" id="how_to_find">
+                <!--
+                Width/height ratio of thumbnail and the main image must match to avoid glitches.
+
+                If ratios are different, you may add CSS3 opacity transition to the main image to make the change less noticable.
+                 -->
+                 <h2> Как к нам проехать</h2>
+                 <p>найжмите на фотографию для увеличения</p>
+
+         <div class="row">
+      		<div class="small-12 medium-3 large-3 columns">
+
+                <a href="images/way1.jpg" data-source="images/way1.jpg" title="Way 1" style="width:193px;height:125px;">
+                  <img src="images/way1.jpg" >
+                </a>
+            </div>
+
+            <div class="small-12 medium-3 large-3 columns">
+                <a href="images/way2.jpg" data-source="images/way2.jpg" title="Way 2" style="width:82px;height:125px;">
+                  <img src="images/way2.jpg" >
+                </a>
+            </div>
+
+            <div class="small-12 medium-3 large-3 columns">
+                <a href="images/way3.jpg" data-source="images/way3.jpg" title="Way 3" style="width:82px;height:125px;">
+                  <img src="images/way3.jpg" >
+                </a>
+            </div>
+
+            <div class="small-12 medium-3 large-3 columns">
+                <a href="images/way4.jpg" data-source="images/way193.jpg" title="Way 4" style="width:82px;height:125px;">
+                  <img src="images/way4.jpg" >
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+			<div class="small-12 medium-3 large-3 columns">		
+                 <a href="images/way5.jpg" data-source="images/way193.jpg" title="Way 5" style="width:82px;height:125px;">
+                  <img src="images/way5.jpg" >
+                </a>
+            </div>
+
+            <div class="small-12 medium-3 large-3 columns">
+                 <a href="images/way6.jpg" data-source="images/way193.jpg" title="Way 6" style="width:82px;height:125px;">
+                  <img src="images/way6.jpg">
+                </a>
+            </div>
+
+            <div class="small-12 medium-3 large-3 columns">
+                 <a href="images/way7.jpg" data-source="images/way193.jpg" title="Way 7" style="width:82px;height:125px;">
+                  <img src="images/way7.jpg" >
+                </a>
+            </div>
+
+            <div class="small-12 medium-3 large-3 columns">
+                 <a href="images/way8.jpg" data-source="images/way193.jpg" title="Way 8" style="width:82px;height:125px;">
+                  <img src="images/way8.jpg" >
+                </a>
+            </div>
+        </div>
+
+
+              </div>
+        
+        </div>
+
+      </div> 
+    </div>
+
+
+
+
+    <footer>
+      <div class='row medium-collapse large-collapse small-collapse'>
+        <div class='row medium-collapse large-collapse small-collapse'>
+          <div class='medium-12 small-12  columns'>
+            <div class='map' id='map-wrapper'>
+                <div id='yandex_map' >
+                      <!--
+                                     <script  type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=gCNW7XLiQqwUuUEk4NsbE6iYqqAqjBiw&amp;width=1000&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
+                                   --> 
+                </div>
+            </div>
+          </div>
+        </div>
+          <div id='yandex_logo' class='ya-logo '>
+            <div class='row medium-collapse large-collapse small-collapse'>
+                    <div class='medium-4 medium-offset-4 large-offset-4 large-4 columns clearfix'>
+                      <img src="images/yandex-ico.png" alt='yandex' class="float-left ">
+                      <p>Координаты стоянки </p>
+                      <p><span> 53.529184, 50.133670</span></p>
+                    </div>
+              </div>  
+              </div>
+      </div>
+            
+ 
+
+
+    </footer>
+    </div>
+
+
+  
+   
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/vendor/moment.min.js"></script>
+    <script src="js/vendor/device.min.js"></script>
+    <script src="js/vendor/popup.js"></script>
+    <script src="js/vendor/inputmask.js"></script>
+    <script src="js/vendor/inputmask.phone.extensions.js"></script>
+    <script src="js/vendor/jquery.inputmask.js"></script>
+ 
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"> </script>
+
+
+    <script src="js/main.js"></script>
+
+    
+
+   
+  </body>
+</html>

@@ -1,0 +1,782 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* main styles */
+@font-face {
+font-family: 'Bebas Neue';
+src: url(../fonts/BebasNeue.otf);
+}
+html, body {
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 1em;
+    line-height: 1.2em;
+}
+
+body {
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+    background: url(../images/bg-content-fill.jpg) repeat-y 50%;
+}
+
+h2 {
+    color: #0e3e5a;
+    font: bold 4.666666666666667rem 'Bebas Neue', sans-serif;
+    margin: 3rem 0;
+}
+
+h3 {
+    margin: 0 0 0.5em;
+    color: #4c4c4c;
+    font: bold 2.6666666666666665em 'Bebas Neue', sans-serif;
+}
+
+
+/* main header */
+body > header .navbar-button {
+    display: none;
+}
+
+body > header {
+    text-align: center;
+    
+}
+
+body > header .logo {
+    height: 12em;
+    padding-top: 6rem;
+}
+
+body > header .logo img {
+    width: 10em;
+}
+
+
+
+.top-menu {
+    background: url(../images/bg-dots.png) rgba(255,255,255,0.8);
+    font:  2.3333333333333335em "Bebas Neue";
+    min-height: 3rem;
+}
+
+.top-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.top-menu li {
+    display: inline-block;
+    padding: 1rem 0;
+}
+
+.top-menu li + li:before {
+    margin-left: 0.5rem;
+    content: '/';
+    margin-right: 0.5rem;
+    color: #364249;
+}
+
+.top-menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.2rem 0.8rem;
+    -webkit-transition:background 0.5s;
+    -moz-transition:background 0.5s;
+    -o-transition:background 0.5s;
+    transition:background 0.5s;
+}
+
+.top-menu a:focus {
+    outline: none;
+}
+
+.top-menu .active a {
+    background: #09466a;
+    color: white;
+}
+
+.top-menu .navbar-button {
+    display: none;
+}
+
+.top-menu {
+    position: fixed;
+    z-index: 400;
+        
+    left: -2em;
+    right: 0;
+    top: 0;
+    
+    border: 0;
+    padding-left: ;
+    text-align: center;
+}
+
+
+
+.container {
+    width: 100%;
+    overflow:hidden;
+    margin-top: 6rem;
+    margin-left: 2rem;
+}
+
+#catalog{
+    text-align: left;
+    margin-top: 6rem;
+}
+
+#catalog h3{
+    border-top: 0.13333333333333333rem solid black;
+    border-bottom: 0.13333333333333333rem solid black;
+    color: black;
+    min-height: 1em;
+    font-size: 2.6666666666666665em;
+    line-height: 0.9;
+    padding: 0.6rem 0;
+    margin: 0 1.2rem 0 1rem;
+    
+}
+
+#catalog h4 {
+    color: white;
+    font: 155% 'Bebas Neue', sans-serif;
+    background: #09466a;
+    padding: 0.6666666666666666rem 1.2rem;
+
+}
+
+#catalog p{
+    text-align: left;
+
+}
+
+#about-us{
+    margin-top: 8em;
+    margin-bottom: 10em;
+    position: relative;
+    text-align: justify;
+}
+
+   
+
+#about-us .bg-picture {
+    position: absolute;
+    left: 23em;
+    top: -5em;
+}
+
+#about-us h3{
+    color: #313131;
+}
+
+#company-history {
+    margin-top: 6em;
+    position: relative;
+}
+
+#company-history p{
+    text-align: left;
+}
+
+#company-history h2 {
+    line-height: 0.9;
+    width: 6em;
+}
+
+#company-history .bg-picture {
+    position: absolute;
+    left: -6em;
+}
+
+ #company-history h4{
+    font: bold 3.3333333333333335em 'Bebas Neue', sans-serif;
+    color: #0e3e5a;
+    margin: 1rem 0 1rem;
+}
+
+#news {
+    margin-top: 6em;
+    align-self: left;
+}
+#news p{
+   text-align: left; 
+}
+
+#news img{
+    border-radius: 50%;
+    width: 8.25em;
+    height: 8.25em;
+    
+}
+
+#news h4{
+    margin: 2rem 0 1rem;
+    color: #0e3e5a;
+    line-height: 0.8;  
+    font: bold 2.6666666666666665em 'Roboto Condensed',sans-serif;
+    font-size: 200%;
+    text-align: left;
+    font-weight: bold;
+}
+
+#news time{
+    font-weight: bold;
+    text-align: left;
+}
+
+#news ul{   
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#news li{
+    display: block;
+    text-align: left;
+}
+
+#contacts {
+    margin-top: 2em;
+    margin-bottom: 0;
+    padding-bottom: 0; 
+}
+
+
+footer{
+    margin-left: 0;
+    padding: 0;
+    background: #09466a;
+    padding: 1rem 0 1rem 0;
+    color: white;
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#contacts h4{
+    text-align: left;
+    font-size: 2em;
+    margin: 0 0 0.5em;
+    font-family:  'Bebas Neue', sans-serif; 
+}
+
+footer p{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+footer .email{
+    color: white;
+}
+
+#map-canvas {
+z-index: 100;
+min-width:100%;
+width: auto;
+min-height:450px;
+margin-bottom: 0;
+padding-bottom: 0;
+margin-right: 0;
+padding-right: 0;
+overflow: hidden;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+.non-selectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.phone-only {
+    display: none;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (resolution: 96dpi) {
+    html {
+        font-size:  0.9375em; /* converting to 72dpi */
+    }
+}
+
+
+
+@media only screen and (max-width: 1279px) {
+    h3 {
+        font-size: 2.3em;
+    }
+
+
+    .top-menu li {
+        font-size: 85%;
+    }
+
+    
+
+    
+
+    #about-us .bg-picture {
+        max-width: 80%;
+        left: 19em;
+    }
+
+   
+
+    #company-history .bg-picture {
+        max-width: 60%;
+        left: -7em;
+    }
+
+   
+
+    #contacts {
+        margin-top: 4.266666666666667rem;
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+   
+
+    h2 {
+        margin: 2rem 0 ;
+        font-size: 3.66667em;
+    }
+
+    h3 {
+        font-size: 2.66667em;
+    }
+
+
+  
+    .main-menu li {
+        font-size: 60%;
+    }
+
+    
+
+   
+
+    #about-us .bg-picture {
+        left: 18em;
+        top: -1em;
+        max-width: 70%;
+    }
+
+
+    #company-history .bg-picture {
+        left: -5em;
+        top: 1em;
+    }
+
+ 
+    #contacts {
+        margin-top: 3.6rem;
+    }
+
+
+
+
+    #contacts .map {
+        min-width: 100%;
+        width: auto;
+    }
+
+  
+}
+
+@media only screen and (max-width: 767px) {
+ 
+   
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.75em;
+    }
+
+
+    .top-menu {
+        position: absolute;
+    }
+
+    .top-menu ul {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+        margin-top: 0.5em;
+    }
+
+    .top-menu ul.visible {
+        opacity: 1;
+        height: auto;
+    }
+
+    .top-menu ul li {
+        display: block;
+        background: none;
+        padding: 0.2em;
+    }
+
+    .top-menu li + li:before {
+        content: "";
+        margin: 0;
+    }
+
+    .top-menu .navbar-button {
+        position: absolute;
+        right: 0.5em;
+        top: 0.5rem;
+        display: block;
+        height: 2rem;
+        outline: none;
+        border: none;
+        background: url(../images/menu-icon.png) no-repeat center right;
+        background-size:  1.9rem 1.9rem;
+        padding-right: 2.3rem;
+        z-index: 450;
+        font-size: 1.5rem;
+    }
+
+ 
+    #contacts .map {
+        height: 25em;
+    }
+
+    .map-caption {
+        display: none;
+    }
+
+ 
+    #about-us .bg-picture {
+        display: none;
+    }
+
+    
+
+    #company-history .bg-picture {
+        display: none;
+    }
+
+    
+
+    #contacts .map-overlay a img {
+        max-width: 2.6em;
+    }
+
+    #contacts .map-overlay .zoom-in {
+        top: 3em;
+    }
+
+    #contacts .map-overlay .zoom-out {
+        top: 6em;
+    }
+
+    #contacts .map-overlay .print {
+        top: 9em;
+    }
+
+    #contacts .map-gesture-hint figure {
+        height: 9em;
+        width: 9em;
+        margin-top: -7em;
+        padding: 2em;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .not-on-phone {
+        display: none !important;
+    }
+
+    .phone-only {
+        display: block;
+    }
+
+    #content .catalog-links {
+        display: none;
+    }
+
+    #about-us-inner .history-part {
+        width: 98%;
+        margin: 0;
+    }
+
+    #about-us-inner img {
+        width: 100%;
+        display: block;
+    }
+
+   
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

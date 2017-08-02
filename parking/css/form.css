@@ -1,0 +1,1030 @@
+
+
+html,body {height:100%;}
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-size: 100%;
+	position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header{
+	z-index: 5;
+	color: rgb(255,255,255);
+	
+	top:0;
+	
+	width: 100%;
+	height: 9.75em;
+}
+
+header .ico{
+	max-width: 20%;	
+}
+
+header .logo{
+	max-width: 4.4em;
+	margin-top: 2.25em;
+	margin-left: 2.25em;
+}
+
+header h4{
+	padding-top: 1.696em;
+	font-size: 1.18rem;
+	line-height: 1.27em;
+	color: rgb(255, 255, 255);
+	padding-left: 6.98em;
+}
+
+ #phone {
+	font-size: 1.19rem;
+	padding-left: 6.98em;
+	font-weight: bold;
+	margin-top: 0.8em;
+}
+
+#phone a{
+	color: black;
+}
+
+	
+}
+
+.row{
+	height: 100%;
+	
+}
+
+
+
+.wrapper{
+	max-width: 100%;
+	margin: 0 auto ;
+}
+
+.vasya{
+	max-width: 21%;
+	margin-right: 2.1em;
+	margin-top: 2.52em;
+}
+
+.parkprice{
+	margin-left: 2em;
+	margin-top: 1.3em;	
+
+}
+
+.car{
+	max-width: 90%;
+}
+
+
+
+
+
+
+
+/*Color classes */
+
+/*
+.bg-white{
+	background-color: white;
+}
+
+.header-top-left{
+	background-color: rgba(182,212,138,0.8);
+
+}
+.header-top-right{
+	background-color: rgba(141,204,195,0.8);
+
+}
+.header-bottom-left{
+	background-color: rgba(157,194,172,0.8);
+	
+}
+.header-bottom-right{
+	background-color: rgba(183,226,247,0.8);
+
+}
+*/
+
+
+.transfer{
+	background-color: rgb(4,127,138);
+	margin-right: 0.37em;
+}
+.price{
+	background-color: rgb(40,170,100);
+	margin-left: 0.37em;
+	margin-right: 0.37em;
+}
+.distance{
+	background-color: rgb(0,174,213);
+	margin-left: 0.37em;
+}
+.coffee{
+	background-color: rgb(0,174,213);
+	margin-right: 0.37em;
+}
+.verybig{
+	background-color: rgb(218,178,81);
+	margin-left: 0.37em;
+	margin-right: 0.37em;
+}
+.hangar{
+	background-color: rgb(33,100,173);
+	margin-left: 0.37em;
+}
+.dog{
+	background-color: rgb(40,170,100);
+	margin-right: 0.37em;
+}
+.justtext{
+	background-color: rgb(45,62,81);
+	margin-left: 0.37em;
+}
+
+
+
+.box{
+	position: relative;
+}
+
+
+header input{
+	max-height: 1.7em;
+}
+
+input[type="text"]
+{
+    font-size:1em;
+    padding: 0;
+}
+
+.em10{
+	height: 13.5em;
+}
+
+.em10-2{
+	height: 15em;
+}
+
+.em5{
+	height: 7.5em;
+	
+}
+
+
+
+
+
+.content-wrapper{
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	background-image: url(../images/form-back.png);
+	background-repeat: no-repeat;
+}
+
+.top-block-wrapper{
+
+	margin: 0 auto ;
+}
+
+.top-block{
+	width: 100%;
+	margin: 0 auto;
+	background-image: url(../images/video.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: 1;
+	height: 36.7em;
+}
+
+.top-hat{
+	height: 10em;
+
+}
+
+.plates0{
+	margin-top:6em;
+}
+
+.top-block-left{
+	background-color: rgba(86,182,142,0.8);
+	margin-top: 9em;
+	height: 11.25em;
+	width: 15em;
+}
+.top-block-left p{
+	font-size: 1.56em;
+	line-height: 1.3em;
+	padding-left: 1.5em;
+	padding-top: 0.9em;
+	white-space: nowrap;
+}
+.top-block-left img{
+	padding-left: 2.3em;
+	margin-top: -0.8em;
+}
+
+.top-block-middle{
+	background-color: rgba(22,172,169,0.8);
+	margin-top: 3.75em;
+	width: 15em;
+	margin-left: 0.3em;
+	height: 12.75em;
+}
+.top-block-middle h3{
+	font-size: 2.31em;
+	margin-left: 1.25em;
+	padding-top: 0.8em;
+
+	
+}
+.top-block-middle p{
+	font-size: 1.43em;
+	margin-top: -0.8em;
+	padding-left: 2em;
+	line-height: 1.3em;
+}
+
+.top-block-right{
+	background-color: rgba(2,166,196,0.8);
+	margin-top: 10.6em;
+	width: 30.8em;
+	position: relative;
+	margin-left: 0.47em;
+	height: 12.75em;
+}
+.top-block-right img{
+	margin-left: 2.8em;
+	margin-top: 2.7em;
+}
+.top-block-right p{
+	font-size: 1.31em;
+	line-height: 1.28em;
+	white-space: nowrap;
+	position: absolute;
+	top: 1.55em;
+	right: 4em;
+}
+
+.hidden{
+      display: hidden;
+    }
+
+
+.main-logo{
+	
+	
+}
+
+header .header-plates{
+
+}
+
+header .header-plates .free{
+	font-size: 2.62em;
+	margin-left: 1.04em;
+	margin-top: 0.4em;
+}
+
+header .header-top-right{
+	margin-top: 2.39em;
+	margin-left: 0.4em;
+}
+header .header-top-right >p{
+	font-size: 0.87em;
+	line-height: 0.02em;
+
+}
+
+header .header-top-left p{
+	font-size: 1.12em;
+	margin-top: -2em;
+	margin-left: 2.4em;
+}
+
+#clock
+{
+	margin-top: -0.6em;
+	font-size: 1.5em;
+}
+
+
+header .header-camera{
+	max-width: 28%;
+	margin-left: 0.57em;
+	margin-top: -0.2em ;
+}
+
+
+header .header-bottom-left{
+	font-size: 0.87em;
+	margin-left: 2.6em;
+}
+header .header-bottom-left span{
+	margin-left: 2em;
+	padding-left: 1.2em;
+	line-height: 1.1em;
+	display: block;
+	margin-top: -0.8em;
+}
+
+header .header-bottom-right{
+	
+}
+header .header-bottom-right img {
+	max-width: 40%;
+	margin-left: 0.8em;
+	margin-top: -2.27em;
+}
+
+header .header-bottom-right p {
+	margin-top: -1em;
+	padding-left: 1.2em;
+}
+
+.fadein10,.fadein15,.fadein20{
+	opacity: 0;
+} 
+
+#date_calculator{
+	margin-top: 3em;
+	height: 5.25em;
+	background-color: rgba(93,93,93,0.34);
+	color: rgb(0,0,0)
+}
+
+#date_calculator p{
+	font-size: 0.87em;
+	margin-top: 0.75em;
+}
+
+#date_calculator input{
+	margin-top: -0.8em;
+	min-height: 2.25em;
+}
+
+#calculate{
+	font-size: 1.12em;
+	max-width: 8.7em;
+	margin-top: 2.08em;
+	background-color: rgb(34, 100, 170);
+	height: 2em;
+	padding-left: 0.7em;
+	padding-top: 0.3em;
+}
+
+#date_calculator #sum{
+	font-size: 1.31em;
+	margin-top: 1.8em;
+}
+
+.top-block_left-text{
+	font-size: 1em;
+	width: 14.25em;
+	margin-top: -0.3em;
+}
+
+.top-block_left-text p{
+	line-height: 1.22em;
+}
+
+.top-block_right-text{
+	font-size: 0.87em;
+	margin-top: 2.31em;
+	margin-left: -3em;
+	width: 39em;
+}
+
+.top-block_right-text p{
+	line-height: 1.27;
+}	
+
+.plates1{
+	margin-top:2.5em; 
+	margin-bottom: 0.74em;
+
+}
+
+.plates2{
+	margin-bottom: 0.74em;
+}
+
+.plates3{
+	margin-bottom: 0.74em;
+}
+
+
+
+.transfer h4{
+	font-size: 1.63em;
+	padding-left: 1.31em;
+	padding-top: 0.57em;
+	line-height: 1.27em;
+	padding-right: 6em;
+}
+
+.transfer p{
+	padding-left: 2.27em;
+    font-size: 0.93em;
+    padding-top: 0.4em;
+    line-height: 1.3em;
+    width: 23em;
+}
+
+.price h4{
+	font-size: 2.37em;
+	padding-left: 0.9em;
+	padding-top: 0.3em;
+}
+
+.price h5{
+	font-size: 1em;
+	margin-left: 2.27em;
+	margin-top: -1em;
+}
+
+.price p{
+	font-size: 0.81em;
+	padding-left: 10.1em;
+	padding-right: 1em;
+	padding-top: 2.5em;
+	line-height: 1.2em;
+	}
+
+.distance h3{
+	font-size: 3.62em;
+	padding-left: 0.65em;
+	padding-top: 0.5em;
+}
+
+.distance p{
+	font-size: 1.37em;
+	padding-left: 1.7em;
+	margin-top: -1.2em;
+}
+
+.coffee img{
+	margin-left: 2.1em;
+	padding-top: 2.4em;
+}
+
+.coffee p{
+	font-size: 1.25em;
+	padding-left: 1.67em;
+	padding-top: 0.87em;
+	line-height: 1.2em;
+	padding-right: 2em;
+}
+
+.verybig{
+	padding-left: 1.2em;
+	padding-top: 2.87em;
+    padding-right: 1em;
+}
+
+
+.verybig p{
+	font-size: 1.12em;
+	line-height: 1.3em;
+}
+
+.verybig h4{
+	font-size: 1.56em;
+	line-height: 1em;
+}
+
+.hangar img{
+	margin-left: 2.2em;
+	margin-top: 2.3em;
+}
+
+.hangar p {
+	font-size: 1.12em;
+	padding-top: 1.2em;
+	padding-left: 2.1em;
+	line-height: 1.3em;
+	padding-right: 1.9em;
+	text-align: justify;
+}
+
+.plates3_camera{
+	padding-left: 2.31em;
+	padding-top: 0.78em;
+}
+
+.plates3_dog{
+	padding-top: 0.78em;
+	padding-right: 1.67em;
+}
+
+.dog h4 {
+	font-size: 1.43em;
+	padding-left: 6.37em;
+	width: 13.5em;
+	padding-top: 0.75em;
+	line-height: 1.2em;
+}
+
+.justtext p {
+	font-size: 0.87em;
+	text-align: justify;
+	padding-left: 2.6em;
+	padding-top: 1.92em;
+	line-height: 1.3em;
+	padding-right: 2.5em;
+}
+
+
+.ya-logo{
+	height: 6em;
+	background-color: rgb(38, 134, 111);
+	
+}
+
+footer{
+	margin-top: 4em;
+}
+
+
+#yandex_logo{
+	margin-top: 0.75em;
+}
+#yandex_logo img{
+	margin-left: -0.3em;
+	margin-top: 0.3em;
+}
+
+#yandex_logo p {
+	font-size: 1.12em;
+	padding-left: 4.7em;
+	line-height: 0.1em;
+	margin-top: 1.6em;
+	color: black;
+}
+#yandex_logo span{
+	font-size: 0.87em;
+	display: block;
+	margin-top: -0.5em;
+}
+
+#main_form{
+	padding-top: 4.5em;
+	color: black;
+	
+}
+#main_form label{
+	font-size: 1em;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+ ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.form-input li {
+    float: left;
+}
+
+.form-input input{
+	width: 6.75em;
+}
+
+.chelovek img{
+	margin-left: 0.9em;
+	margin-top: 1.6em;
+}
+
+.chelovek p {
+	padding-left: 7.6em;
+	padding-right: 5.6em;
+	text-align: left;
+	font-size: 1em;
+	padding-top: 2em;
+	line-height: 1.3em;
+}
+
+input[type="text"] {
+	font-size: 1em;
+	padding-left: 0.8em;
+}
+
+
+.bottom-text p {
+	position: absolute;
+	margin-bottom: 0.9em;
+	bottom: 0;
+}
+
+#acceptReserv{
+	margin-left:0.5em;
+}
+
+#acceptReserv label{
+	font-size: 0.87em;
+}
+
+.text-to-grey{
+	color: grey;
+	text-decoration: line-through;	
+}
+
+a:link { color: white; }
+ 
+a:visited { color: white; }
+ 
+a:hover { color: white; }
+ 
+a:active { color:white; }
+
+/* Media Queiries   */
+
+@media screen 
+  and (max-width: 1010px)
+{
+
+	body{
+		font-size: 90%;
+	}
+
+	.dog h4 {
+		font-size: 1.43rem;
+		padding-left: 6.37em;
+		width: 13.5em;
+		padding-top: 0.75rem;
+		line-height: 1.2em;
+	}
+
+}
+
+@media screen 
+  and (max-width: 930px)
+{
+
+	body{
+		font-size: 80%;
+	}
+	header h4 {
+
+		font-size: 1.18rem;
+		padding-left: 6.98rem;
+		padding-top: 0;
+	}
+
+	#phone {
+		padding-left: 0; 
+		margin-top: 0;
+	}
+	#date_calculator {
+		margin-top: 2em;
+		height: 100%;
+	}
+
+	.dog h4 {
+    font-size: 1.3rem;
+	}
+	.plates3_camera{
+		width: 25%;
+	}
+	.plates3_dog{
+		width: 22%;
+	}
+
+}
+
+@media screen 
+  and (max-width: 840px)
+{
+	header h4 {
+	    padding-top: 0;
+	}
+	#date_calculator p {
+		font-size: 0.8em;
+	}
+	.dog h4 {
+		font-size: 1.1rem;
+	}
+}
+
+
+@media screen 
+  and (max-width: 800px)
+{
+
+	body{
+		font-size: 75%;
+	}
+
+	#date_calculator .columns{
+		padding-left: 0;
+	}
+	#phone {
+		font-size: 1rem;
+	}
+	#date_calculator #calculate {
+		margin-left: 0; 
+		padding-left: 0; 
+	}
+	.dog h4 {
+		font-size: 1.1rem;
+	}
+	img {
+	    max-width: 80%;
+	}
+	.transfer p {
+		padding-top: 0.4em; 
+		width: 23em; 
+	}
+
+@media screen 
+  and (max-width: 700px)
+{
+
+	body{
+		font-size: 65%;
+	}
+
+	header .logo {
+		margin-left: 0.75em;
+		max-width: 20%;
+
+	}
+	header h4 {
+		font-size: 1.18rem;
+		padding-left: 5.98rem;
+		padding-top: 0;
+	}
+	#date_calculator p {
+		font-size: 0.87em;
+	}
+	.parkprice {
+		 margin-left: 0; 
+		 margin-top: 0; 
+	}
+	header {
+		height: 10.75em;
+	}
+	.dog h4 {
+		font-size: 1rem;
+	}
+	#yandex_logo img {
+	margin-left: 0; 
+	margin-top: 0.3em;
+	max-width: 20%;
+}
+}
+
+
+
+@media screen 
+  and (max-width: 640px)
+   {
+  	body{
+		font-size: 100%;
+	}
+
+  	header{
+  		position: relative;
+  		height: 7.95em;
+  	}
+
+  	header h4 {
+		font-size: 1.5rem;
+		padding-left: 5.98em;
+		padding-top: 0;
+	}
+	header .logo {
+		
+		margin-top: 0.25em;
+
+	}
+		  	
+
+	.top-block{
+		margin-top: 16em;
+	}
+
+	.top-block-left{
+		margin-top: 1em;
+	}
+	.top-block-middle{
+		margin-top: 1em;
+	}
+	.top-block-right{
+		margin-top: 1em;
+	}
+
+	#phone {
+	 	padding-left: 0; 
+	 	margin-left: 9em;
+	}
+	#date_calculator {
+		margin-top: 0;
+		height: 12.25em;
+		background-color: rgba(93,93,93,0.34);
+		color: rgb(0,0,0);
+	}
+	#date_calculator #calculate {
+		margin-top: -0.5em; 
+	}
+	.plates0 {
+		margin-top: 0;
+	}
+	.top-block-left {
+		width: 100%;
+		margin-left: 0em;
+		height: 10.25em;
+	}
+	.top-block-middle{
+		width: 100%;
+		margin-left: 0em;
+		height: 10.25em;
+	}
+	.top-block-right{
+		width: 100%;
+		margin-left: 0em;
+		height: 10.25em;
+		position: relative;
+	}
+
+	.top-block-middle h3 {
+		padding-top: 0.3em;
+	}
+	.top-block-left p {
+		padding-top: 0.6em;
+	}
+
+	.top-block-right img {
+		margin-left: 0em;
+		position:absolute;
+		bottom: 1em;
+
+	}
+	.top-block-right p {
+		font-size: 1.31em;
+		position: absolute;
+		top: 5%;
+		right: 10%;
+	}
+	.transfer {
+		margin-right: 0.37em;
+		margin-left: 0.37em;
+	}
+	.distance {
+		margin-left: 0.37em;
+		margin-right: 0.37em;
+	}
+	.hangar {
+		margin-left: 0.37em;
+		margin-right: 0.37em;
+	}
+	.price {
+		margin: 0.7em 0.37em;
+	}
+	.dog {
+		margin-right: 0.37em;
+		margin-left: 0.37em;
+	}
+	.dog h4 {
+		font-size: 1rem;
+		padding-left: 9em;
+		width: 100%;
+		padding-top: 2em;
+	}
+	header {
+		height: 6.75em;
+	}
+	form {
+		margin-left: 0.37em;
+		margin-right: 0.37em;
+	}
+	#calculate{
+		position: absolute;
+		right: 0.6em;
+		padding-left: 0.5em !important;
+	}
+	.top-block-right {
+		margin-left: 0;
+		margin-right: 0;
+		max-width: 30.57em;
+	}
+	.top-block-left {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.top-block-middle {
+		max-width: 100%;
+		margin-left: 0;
+		height: 10.25em;
+		margin-right: 0;
+	}
+	.top-block {
+		
+		height: 23.7em;
+	}
+	.distance {
+		margin-left: 0.37em;
+		margin-right: 0.37em;
+		margin-top: 0.7em;
+	}
+	.parkprice {
+		margin-left: 1em;
+		margin-top: 0.5em;
+		max-width: 30%;
+	}
+	.top-block-middle p {
+		font-size: 1.43em;
+		margin-top: -0.8em;
+		padding-left: 0;
+		line-height: 1.3em;
+		margin-left: 1.35em;
+	}
+	.top-block-middle h3 {
+		margin-left: 0.8em;
+	}
+	.top-block-left p {
+		padding-left: 0; 
+		margin-left: 0.5em;
+	}
+	.transfer h4 {
+    	font-size: 1.2em;
+    }
+    .price p {
+		font-size: 0.81em;
+		padding-left: 0;
+		padding-right: 1em;
+		padding-top: 0.5em;
+		line-height: 1.2em;
+		margin-left: 6em;
+	}
+	.price h4 {
+		font-size: 2.37em;
+		padding-left: 0.5em;
+		padding-top: 0.3em;
+	}
+
+	.price h5 {
+		font-size: 1em;
+		margin-left: 1.5em;
+		margin-top: 0;
+	}
+	.distance h3 {
+		font-size: 2.62em;
+		padding-left: 0.65em;
+		padding-top: 0.5em;
+	}
+	.distance p {
+		font-size: 1.5em;
+		margin-top: 0;
+		text-align: center;
+		padding-left: 0; 
+	 	line-height: 1.4;
+	}
+	.dog h4 {
+		font-size: 1rem;
+		padding-left: 7em;
+		width: 100%;
+		padding-top: 2em;
+	}
+	.plates3_dog {
+		padding-top: 1.78em;
+		padding-right: 1.67em;
+	}
+	.plates3_camera {
+		padding-left: 2.31em;
+		padding-top: 1.78em;
+	}
+	header {
+		height: 7.75em;
+	}
+	#main_form {
+	    padding-top: 0;
+	}
+	.bottom-text p {
+		position: relative;
+	}
+	#calculate {
+		position: relative;
+		margin-top: 0;
+		margin-left: 0.7em;
+		float: right;
+	}
+
+}
