@@ -1,8 +1,7 @@
 .bookshelf {
     list-style: none;
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-bottom: 2rem;
-    border-top: 2px solid rgb(0,0,0,);
     border-bottom: 2px solid rgb(0,0,0);
 }
 
@@ -10,7 +9,7 @@
     display: inline-block;
     position: relative;
     cursor: pointer; 
-    width: 4rem;
+    width: 2.5rem;
     height: 20rem;
     margin-right: 2rem;
 }
@@ -25,63 +24,63 @@
 
 
 .book-wrapper .book-front{
-    position: absolute;
-    width: 20rem;
-    height: 20rem;
-    display: block;
-    background-color: teal;
-    transform: rotateY(   0deg ) ; 
-}
-
-.book-wrapper .book-left{
     -webkit-writing-mode: vertical-rl; 
     writing-mode:tb-rl;
     position: absolute;
     width: 4rem;
     height: 20rem;
     display: block;
+    background-color: teal;
+    transform: rotateY( 0deg ) translateZ(7.5rem) ; 
+}
+
+.book-wrapper .book-left{
+    position: absolute;
+    width: 15rem;
+    height: 20rem;
+    display: block;
     background: lightgreen;
-    transform: translateX(-2em) translateZ(-2rem) rotateY(-90deg) ;
+    transform: translateX(-7.5rem)  rotateY(-90deg) ;
 }
 
 .book-wrapper .book-right  { 
     position: absolute;
-    width: 4rem;
+    width: 15rem;
     height: 20rem;
     display: block;
     background: yellowgreen;
-    transform: translateX(18em) translateZ(-2rem) rotateY(90deg) ;
+    transform: translateX(-3.5rem) rotateY(90deg);
 }
     
  
 
 .book-wrapper .book-back {
-    width: 20rem;
+    width: 4rem;
     height: 20rem;
     display: block;
     position: absolute;
     background: orange;
-    transform: rotateX( 180deg ) translateZ( 4rem ); 
+    transform: rotateX( 180deg ) translateZ( 7.5rem ); 
 
 }
 
 .book-wrapper .book-top {
     width: 4rem;
-    height: 20rem;
+    height: 15rem;
     display: block;
     position: absolute;
     background: skyblue;
-    transform: translateY(-10em) translateX(8rem) translateZ(-2rem) rotateX(90deg) rotateZ(90deg)
+    transform: translateY(-7.5em) rotateX(90deg) ;
 
 }
 
 .book-wrapper .book-bottom {
     position: absolute;
     width: 4rem;
-    height: 20rem;
+    height: 15rem;
     display: block;
     background: steelblue;
-    transform: translateY(10em) translateX(8rem) translateZ(-2rem) rotateX(90deg) rotateZ(90deg)
+    transform: translateY(12.5em) rotateX(90deg) ;
 }
 
 
@@ -90,21 +89,31 @@
 
 @keyframes rotate {
   100% {
-    transform: rotateY(-360deg);
+    transform: rotateY(-90deg);
   }
 }
 
 .book-outer-container{
     position: relative;
     perspective: 1000px;
-    width: 20rem;
+    width: 4rem;
     height: 20rem;
 }
 
 .book-wrapper {
-    transform:rotateY(80deg) ;
+   transition: all 1s;
 }
 
-.book:hover .book-wrapper{
-    animation: rotate 10s infinite linear;
+li.drag .book-wrapper{
+    animation: rotate 1s linear;
+    webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.book-spine-wrapper{
+    padding: 0.625rem;
+}
+
+.book-titlepage-wrapper{
+    padding: 0.625rem;
 }

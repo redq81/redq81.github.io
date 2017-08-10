@@ -2,44 +2,34 @@
 var app = angular.module('bookshelf', [])
     .controller('MainCtrl', MainCtrl);
 
-app.directive('myDraggable', ['$document', function($document) {
-  return {
-    link: function(scope, element, attr) {
-      var startX = 0, startY = 0, x = 0, y = 0;
+app.directive('draggable', function() {
+    return function(scope, element) {
+        // this gives us the native JS object
+        var el = element[0];
 
-      element.on('mousedown', startDrag);
+        el.draggable = true;
 
-    
-      function startDrag(event) {
-            // Prevent default dragging of selected content
-            event.preventDefault();
-            startX = event.pageX - x;
-            startY = event.pageY - y;
-            $document.on('mousemove', mousemove);
-            $document.on('mouseup', mouseup);
-       
-        
-      }
+        el.addEventListener(
+            'dragstart',
+            function(e) {
+                e.dataTransfer.effectAllowed = 'move';
+                e.dataTransfer.setData('Text', this.id);
+                this.classList.add('drag');
+                return false;
+            },
+            false
+        );
 
-     
-
-      function mousemove(event) {
-        y = event.pageY - startY;
-        x = event.pageX - startX;
-        element.css({
-          top: y + 'px',
-          left:  x + 'px',
-          'z-index':999
-        });
-      }
-
-      function mouseup() {
-        $document.off('mousemove', mousemove);
-        $document.off('mouseup', mouseup);
-      }
+        el.addEventListener(
+            'dragend',
+            function(e) {
+                this.classList.remove('drag');
+                return false;
+            },
+            false
+        );
     }
-  };
-}]);
+});
 
 
 function MainCtrl($scope, $filter,$http) {
@@ -47,13 +37,15 @@ function MainCtrl($scope, $filter,$http) {
 
     function bookShelfs(){
         var result = [];
+        var counter = 0 ;
         for(var i=0; i< $scope.book_list.length/$scope.booksOnShelf ; i++ ){
-                var arr= [];
+                var shelf= [];
             for(var j = 0; j < $scope.booksOnShelf; j++){
-                arr.push($scope.book_list[i*$scope.booksOnShelf+j]);
-                arr[j]["id"] = i*$scope.booksOnShelf+j;
+                shelf.push($scope.book_list[i*$scope.booksOnShelf+j]);
+                shelf[j]["id"] = counter;
+                counter +=1;
             }
-            result.push(arr);
+            result.push(shelf);
         }
         return result;
      };

@@ -10,19 +10,28 @@
   <body>
     <div ng-controller="MainCtrl">
       <ul class="bookshelf" ng-repeat="shelf in bookShelfs">
-        <li id="book{{book.id}}" class="book" ng-repeat="book in shelf" my-draggable>
-          <div class="book-wrapper">
-            <div class="book-right"></div>
-            <div class="book-front">
-                <p>{{book.author}}</p>
-                <h2>{{book.title}}</h2>
-                <p>{{book.year}}</p>
-                <p>{{book.country}}</p>
+        <li id="book{{book.id}}" class="book" ng-repeat="book in shelf" draggable>
+          <div class="book-outer-container">
+            <div class="book-wrapper">
+              <div class="book-right">
+                <div class="book-titlepage-wrapper">
+                 <p>{{book.author}}</p>
+                  <h2>{{book.title}}</h2>
+                  <p>{{book.year}}</p>
+                  <p>{{book.country}}</p>
+                </div>
+              </div>
+              <div class="book-front">
+                <div class="book-spine-wrapper">
+                  <span class="book-spine__author-name">{{book.author}}</span> 
+                  <span class="book-spine__book-title">{{book.title}}</span>
+                </div>
+              </div>
+              <div class="book-left"></div>
+              <div class="book-back"></div>
+              <div class="book-top"></div>
+              <div class="book-bottom"></div>
             </div>
-            <div class="book-left">{{book.author}}. "{{book.title}}"</div>
-            <div class="book-back"></div>
-            <div class="book-top"></div>
-            <div class="book-bottom"></div>
           </div>
         </li>
       </ul>
