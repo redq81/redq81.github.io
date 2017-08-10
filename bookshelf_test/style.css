@@ -1,0 +1,110 @@
+.bookshelf {
+    list-style: none;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-top: 2px solid rgb(0,0,0,);
+    border-bottom: 2px solid rgb(0,0,0);
+}
+
+.book {
+    display: inline-block;
+    position: relative;
+    cursor: pointer; 
+    width: 4rem;
+    height: 20rem;
+    margin-right: 2rem;
+}
+
+.book-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+}
+
+
+
+.book-wrapper .book-front{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    display: block;
+    background-color: teal;
+    transform: rotateY(   0deg ) ; 
+}
+
+.book-wrapper .book-left{
+    -webkit-writing-mode: vertical-rl; 
+    writing-mode:tb-rl;
+    position: absolute;
+    width: 4rem;
+    height: 20rem;
+    display: block;
+    background: lightgreen;
+    transform: translateX(-2em) translateZ(-2rem) rotateY(-90deg) ;
+}
+
+.book-wrapper .book-right  { 
+    position: absolute;
+    width: 4rem;
+    height: 20rem;
+    display: block;
+    background: yellowgreen;
+    transform: translateX(18em) translateZ(-2rem) rotateY(90deg) ;
+}
+    
+ 
+
+.book-wrapper .book-back {
+    width: 20rem;
+    height: 20rem;
+    display: block;
+    position: absolute;
+    background: orange;
+    transform: rotateX( 180deg ) translateZ( 4rem ); 
+
+}
+
+.book-wrapper .book-top {
+    width: 4rem;
+    height: 20rem;
+    display: block;
+    position: absolute;
+    background: skyblue;
+    transform: translateY(-10em) translateX(8rem) translateZ(-2rem) rotateX(90deg) rotateZ(90deg)
+
+}
+
+.book-wrapper .book-bottom {
+    position: absolute;
+    width: 4rem;
+    height: 20rem;
+    display: block;
+    background: steelblue;
+    transform: translateY(10em) translateX(8rem) translateZ(-2rem) rotateX(90deg) rotateZ(90deg)
+}
+
+
+
+
+
+@keyframes rotate {
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+
+.book-outer-container{
+    position: relative;
+    perspective: 1000px;
+    width: 20rem;
+    height: 20rem;
+}
+
+.book-wrapper {
+    transform:rotateY(80deg) ;
+}
+
+.book:hover .book-wrapper{
+    animation: rotate 10s infinite linear;
+}

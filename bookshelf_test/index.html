@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="bookshelf">
+  
+  <head>
+    <meta charset="utf-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  
+  <body>
+    <div ng-controller="MainCtrl">
+      <ul class="bookshelf" ng-repeat="shelf in bookShelfs">
+        <li id="book{{book.id}}" class="book" ng-repeat="book in shelf" my-draggable>
+          <div class="book-wrapper">
+            <div class="book-right"></div>
+            <div class="book-front">
+                <p>{{book.author}}</p>
+                <h2>{{book.title}}</h2>
+                <p>{{book.year}}</p>
+                <p>{{book.country}}</p>
+            </div>
+            <div class="book-left">{{book.author}}. "{{book.title}}"</div>
+            <div class="book-back"></div>
+            <div class="book-top"></div>
+            <div class="book-bottom"></div>
+          </div>
+        </li>
+      </ul>
+
+
+      
+
+
+<!-- 
+
+      <ul>
+        <li ng-repeat="book in book_list">{{book}}</li>
+      </ul>
+    -->
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.20/angular.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
