@@ -1,4 +1,5 @@
 
+
 var app = angular.module('bookshelf', [])
     .controller('MainCtrl', MainCtrl);
 
@@ -33,7 +34,7 @@ app.directive('draggable', function() {
 
 
 function MainCtrl($scope, $filter,$http) {
-     $scope.booksOnShelf = 10;
+    $scope.booksOnShelf = 10;
 
     function bookShelfs(){
         var result = [];
@@ -51,6 +52,7 @@ function MainCtrl($scope, $filter,$http) {
      };
 
 
+
     $http.get('/books.json').
       success(function(data, status, headers, config) {
         // this callback will be called asynchronously
@@ -64,6 +66,5 @@ function MainCtrl($scope, $filter,$http) {
         // or server returns response with an error status.
         console.log("something went wrong")
       });
-
 
 }

@@ -10,7 +10,7 @@
   <body>
     <div ng-controller="MainCtrl">
       <ul class="bookshelf" ng-repeat="shelf in bookShelfs">
-        <li id="book{{book.id}}" class="book" ng-repeat="book in shelf" draggable>
+        <li id="book{{book.id}}" class="book" ng-repeat="book in shelf" draggable="true">
           <div class="book-outer-container">
             <div class="book-wrapper">
               <div class="book-right">

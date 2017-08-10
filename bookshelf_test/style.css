@@ -19,6 +19,7 @@
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
+     transition: all 1s;
 }
 
 
@@ -100,14 +101,17 @@
     height: 20rem;
 }
 
-.book-wrapper {
-   transition: all 1s;
+.drag{
+    z-index: 9;
 }
 
 li.drag .book-wrapper{
     animation: rotate 1s linear;
-    webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
+}
+
+.drag div{
+   background-color: transparent; 
 }
 
 .book-spine-wrapper{
@@ -116,4 +120,14 @@ li.drag .book-wrapper{
 
 .book-titlepage-wrapper{
     padding: 0.625rem;
+}
+
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
 }
