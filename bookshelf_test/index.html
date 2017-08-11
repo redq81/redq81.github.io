@@ -9,10 +9,12 @@
   
   <body>
     <div ng-controller="MainCtrl">
+      
       <ul class="bookshelf" ng-repeat="shelf in bookShelfs">
-        <li id="book{{book.id}}" class="book" ng-repeat="book in shelf" draggable="true">
+        <li id="book{{book.id}}" class="book" ng-repeat="book in shelf" >
+        
           <div class="book-outer-container">
-            <div class="book-wrapper">
+            <div class="book-wrapper" draggable draggable-state="bookState" ng-class="bookState">
               <div class="book-right">
                 <div class="book-titlepage-wrapper">
                  <p>{{book.author}}</p>
@@ -25,6 +27,7 @@
                 <div class="book-spine-wrapper">
                   <span class="book-spine__author-name">{{book.author}}</span> 
                   <span class="book-spine__book-title">{{book.title}}</span>
+                  <div> state : {{bookState}}</div>
                 </div>
               </div>
               <div class="book-left"></div>

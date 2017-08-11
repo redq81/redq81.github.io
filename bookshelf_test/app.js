@@ -4,32 +4,122 @@ var app = angular.module('bookshelf', [])
     .controller('MainCtrl', MainCtrl);
 
 app.directive('draggable', function() {
-    return function(scope, element) {
-        // this gives us the native JS object
-        var el = element[0];
+    return {
+        scope: {
+          draggableState: '=',
+        },
+        link: function(scope, element) {
+            // this gives us the native JS object
+            scope.draggableState = "initial";
+            var el = element[0];
+           
+            var last_position = {};
 
-        el.draggable = true;
+            var mouseDirection ="";
 
-        el.addEventListener(
-            'dragstart',
-            function(e) {
-                e.dataTransfer.effectAllowed = 'move';
-                e.dataTransfer.setData('Text', this.id);
-                this.classList.add('drag');
-                return false;
-            },
-            false
-        );
+            el.draggable = true;
 
-        el.addEventListener(
-            'dragend',
-            function(e) {
-                this.classList.remove('drag');
-                return false;
-            },
-            false
-        );
-    }
+            el.addEventListener(
+                'dragstart',
+                function(e) {
+                    this.addEventListener("mousemove", getMouseDirection, true);
+                    scope.$evalAsync(function () {
+                        console.log( mouseDirection );
+                        if( mouseDirection == "down" && 
+                            scope.draggableState == "from_stacked_out_to_initial" ||
+                            scope.draggableState == "initial" )
+                        {
+                            scope.draggableState = "from_initial_to_stacked_out";
+                            
+                        } else if (mouseDirection == "up" && 
+                            scope.draggableState == "from_initial_to_stacked_out" ||
+                            scope.draggableState =="from_rotated_to_stacked_out" ) 
+                        {
+                            scope.draggableState = "from_stacked_out_to_initial";
+                            
+                        } else if (mouseDirection == "left" && 
+                            scope.draggableState == "from_initial_to_stacked_out" ||
+                            scope.draggableState =="from_rotated_to_stacked_out") 
+                        {
+                            scope.draggableState ="from_stacked_out_to_rotated";
+                            
+                        } else if (mouseDirection == "right" && 
+                            scope.draggableState == "from_stacked_out_to_rotated") 
+                        {
+                            scope.draggableState ="from_rotated_to_stacked_out";
+                            
+                        }
+                    });
+                  
+                    return false;
+                },
+                false
+            );
+
+            el.addEventListener(
+                'dragend',
+                function(e) {
+                    el.removeEventListener("mousemove", getMouseDirection, false);
+                    scope.$evalAsync(function () {
+                        if (scope.draggableState == "from_initial_to_stacked_out" ||
+                            scope.draggableState =="from_rotated_to_stacked_out") 
+                        {
+                            scope.draggableState = stacked_out;
+                        }
+                     
+                    });
+                   
+                    
+                    return false;
+                },
+                false
+            );
+
+            function getMouseDirection(event) {
+
+                var deltaX = last_position.x - event.clientX,
+                    deltaY = last_position.y - event.clientY;
+
+
+                 if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX > 0) {
+                    //left
+                    mouseDirection = "left";
+                } else if (Math.abs(deltaX) > Math.abs(deltaY) && deltaX < 0) {
+                    //right
+                    mouseDirection = "right";
+                } else if (Math.abs(deltaY) > Math.abs(deltaX) && deltaY > 0) {
+                    //up
+                    mouseDirection = "up";
+                } else if (Math.abs(deltaY) > Math.abs(deltaX) && deltaY < 0) {
+                    //down
+                    mouseDirection = "down";
+                }
+
+
+                last_position = {
+                    x : event.clientX,
+                    y : event.clientY
+                };
+                // if (oldX < e.pageX ) {
+                //     xDirection = "right";
+                // } else  {
+                //     xDirection = "left";
+                // }
+             
+                
+                // if (oldY < e.pageY ) {
+                //     yDirection = "down";
+                // } else  {
+                //     yDirection = "up";
+                // }
+             
+                // oldX = e.pageX;
+                // oldY = e.pageY;
+             
+                
+            };
+        }
+    } 
 });
 
 

@@ -14,13 +14,7 @@
     margin-right: 2rem;
 }
 
-.book-wrapper{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-     transition: all 1s;
-}
+
 
 
 
@@ -87,10 +81,36 @@
 
 
 
-
-@keyframes rotate {
+@keyframes stuckOutBook {
+  50% {
+    transform: translateZ(5rem);
+  } 
   100% {
-    transform: rotateY(-90deg);
+    transform: rotateX(-30deg);
+  }
+}
+
+@keyframes stuckInBook {
+  50% {
+    transform: translateZ(5rem);
+  } 
+  100% {
+    transform: rotateX(-30deg);
+  }
+}
+
+
+@keyframes rotateLeftToTitlePage {
+
+  100% {
+    transform:  rotateY(-90deg);
+  }
+}
+
+@keyframes rotateRightToSpine {
+ 
+  100% {
+    transform:  rotateY(-90deg);
   }
 }
 
@@ -101,18 +121,47 @@
     height: 20rem;
 }
 
-.drag{
-    z-index: 9;
+.book-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s;
 }
 
-li.drag .book-wrapper{
-    animation: rotate 1s linear;
+.from_stacked_out_to_initial.book-wrapper{
+   
+    animation: stuckInBook 1s linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+}
+
+.stacked_out.book-wrapper{
+    transform: translateZ(5rem) rotateX( 30deg);
+}
+
+.from_initial_to_stacked_out.book-wrapper{
+    transform: translateZ(5rem) rotateX( 30deg);
+    animation: stuckOutBook 1s linear;
     animation-fill-mode: forwards;
 }
 
-.drag div{
-   background-color: transparent; 
+
+
+
+.from_stacked_out_to_rotated.book-wrapper{
+    animation: rotateLeftToTitlePage 1s linear;
+    animation-fill-mode: forwards;
 }
+
+.from_rotated_to_stacked_out.book-wrapper{
+    animation: rotateRightToSpine 1s linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+}
+
+
+
 
 .book-spine-wrapper{
     padding: 0.625rem;
