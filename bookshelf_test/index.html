@@ -15,14 +15,7 @@
         
           <div class="book-outer-container">
             <div class="book-wrapper" draggable draggable-state="bookState" ng-class="bookState">
-              <div class="book-right" ng-style= "{'background-image':getBookBackground(book.imageLink)}">
-               <!--  <div class="book-titlepage-wrapper" >
-                 <p>{{book.author}}</p>
-                  <h2>{{book.title}}</h2>
-                  <p>{{book.year}}</p>
-                  <p>{{book.country}}</p>
-                  {{getImageUrl(book.imageLink)}}
-                </div> -->
+              <div class="book-right" ng-style= "{'background-image':getBookBackground(book.imageLink)}" >
               </div>
               <div class="book-front">
                 <div class="book-spine-wrapper">
@@ -32,9 +25,21 @@
                 </div>
               </div>
               <div class="book-left"></div>
-              <div class="book-back"></div>
+
+              <ul class='page'>
+                <li>page 1</li>
+                <li>page 2</li>
+                <li>page 3</li>
+                <li>page 4</li>
+                <li>page 5</li>
+                <li>page 6</li>
+                <li>page 7</li>
+              </ul>
+
+
+              <!-- <div class="book-back"></div>
               <div class="book-top"></div>
-              <div class="book-bottom"></div>
+              <div class="book-bottom"></div> -->
             </div>
           </div>
         </li>

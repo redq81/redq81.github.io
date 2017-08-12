@@ -22,10 +22,16 @@ app.directive('draggable', function() {
 
             this.addEventListener("mousemove", getMouseDirection, true);
 
+
+
             el.addEventListener(
                 'dragstart',
                 function(e) {
-                    
+                    var draggebleNodeGhost = this.cloneNode(true);
+                        draggebleNodeGhost.style.display = "none";
+                        document.body.appendChild(draggebleNodeGhost);
+                        e.dataTransfer.setDragImage(draggebleNodeGhost, 0, 0);
+                    this.classList.add('dragged');
                     scope.$evalAsync(function () {
                         console.log( mouseDirection );
                         if( mouseDirection == "down" && 
@@ -43,7 +49,7 @@ app.directive('draggable', function() {
                         } else if (mouseDirection == "right" && 
                             scope.draggableState == "rotated") 
                         {
-                            scope.draggableState ="from_rotated_to_stacked_out";
+                            scope.draggableState ="from_rotated_to_initial";
                         }
                     });
                   
@@ -56,23 +62,35 @@ app.directive('draggable', function() {
                 'dragend',
                 function(e) {
                     el.removeEventListener("mousemove", getMouseDirection, false);
+                   
                     scope.$evalAsync(function () {
-                        if (scope.draggableState == "from_initial_to_stacked_out" ||
-                            scope.draggableState =="from_rotated_to_stacked_out") 
+                        if (scope.draggableState == "from_initial_to_stacked_out" ) 
                         {
                             scope.draggableState = "stacked_out";
+                            el.parentElement.style.zIndex = 5;
                         } else if (scope.draggableState == "from_stacked_out_to_rotated" ) 
                         {
                             scope.draggableState = "rotated";
-                        } else if (scope.draggableState == "from_stacked_out_to_initial" ) 
+                            el.addEventListener("click", openBook, false);
+                            el.parentElement.style.zIndex = 9;
+                        } else if (scope.draggableState == "from_stacked_out_to_initial" ||
+                            scope.draggableState =="from_rotated_to_initial" ) 
                         {
                             scope.draggableState = "initial"; 
+                            el.classList.remove('dragged');
+                            el.removeEventListener("click", openBook, false);
+                            el.parentElement.style.zIndex = 1;
                         }                
                     });                
                     return false;
                 },
                 false
             );
+
+            function openBook(){
+                el.classList.add('opened');
+                console.log("book opens");
+            }
 
             function getMouseDirection(event) {
 
@@ -99,24 +117,9 @@ app.directive('draggable', function() {
                     x : event.clientX,
                     y : event.clientY
                 };
-                // if (oldX < e.pageX ) {
-                //     xDirection = "right";
-                // } else  {
-                //     xDirection = "left";
-                // }
-             
-                
-                // if (oldY < e.pageY ) {
-                //     yDirection = "down";
-                // } else  {
-                //     yDirection = "up";
-                // }
-             
-                // oldX = e.pageX;
-                // oldY = e.pageY;
-             
-                
             };
+
+
         }
     } 
 });
@@ -124,9 +127,8 @@ app.directive('draggable', function() {
 
 function MainCtrl($scope, $filter,$http,imageUrlTemplate) {
     $scope.booksOnShelf = 10;
+
     $scope.getBookBackground = getBookBackground;
-
-
 
     function getBookBackground(partUrl){
         return 'url(' + imageUrlTemplate+partUrl + ')';
@@ -146,7 +148,6 @@ function MainCtrl($scope, $filter,$http,imageUrlTemplate) {
         }
         return result;
      };
-
 
 
     $http.get('/books.json').
