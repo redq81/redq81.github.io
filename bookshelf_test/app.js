@@ -150,7 +150,7 @@ function MainCtrl($scope, $filter,$http,imageUrlTemplate) {
      };
 
 
-    $http.get('/books.json').
+    $http.get('books.json').
       success(function(data, status, headers, config) {
         // this callback will be called asynchronously
         // when the response is available
