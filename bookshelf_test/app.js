@@ -1,7 +1,8 @@
 
 
 var app = angular.module('bookshelf', [])
-    .controller('MainCtrl', MainCtrl);
+    .controller('MainCtrl', MainCtrl)
+    .constant('imageUrlTemplate',"https://raw.githubusercontent.com/benoitvallon/100-best-books/master/static/");
 
 app.directive('draggable', function() {
     return {
@@ -19,35 +20,30 @@ app.directive('draggable', function() {
 
             el.draggable = true;
 
+            this.addEventListener("mousemove", getMouseDirection, true);
+
             el.addEventListener(
                 'dragstart',
                 function(e) {
-                    this.addEventListener("mousemove", getMouseDirection, true);
+                    
                     scope.$evalAsync(function () {
                         console.log( mouseDirection );
                         if( mouseDirection == "down" && 
-                            scope.draggableState == "from_stacked_out_to_initial" ||
                             scope.draggableState == "initial" )
                         {
                             scope.draggableState = "from_initial_to_stacked_out";
-                            
                         } else if (mouseDirection == "up" && 
-                            scope.draggableState == "from_initial_to_stacked_out" ||
-                            scope.draggableState =="from_rotated_to_stacked_out" ) 
+                            scope.draggableState == "stacked_out" ) 
                         {
                             scope.draggableState = "from_stacked_out_to_initial";
-                            
                         } else if (mouseDirection == "left" && 
-                            scope.draggableState == "from_initial_to_stacked_out" ||
-                            scope.draggableState =="from_rotated_to_stacked_out") 
+                            scope.draggableState == "stacked_out" ) 
                         {
                             scope.draggableState ="from_stacked_out_to_rotated";
-                            
                         } else if (mouseDirection == "right" && 
-                            scope.draggableState == "from_stacked_out_to_rotated") 
+                            scope.draggableState == "rotated") 
                         {
                             scope.draggableState ="from_rotated_to_stacked_out";
-                            
                         }
                     });
                   
@@ -64,12 +60,15 @@ app.directive('draggable', function() {
                         if (scope.draggableState == "from_initial_to_stacked_out" ||
                             scope.draggableState =="from_rotated_to_stacked_out") 
                         {
-                            scope.draggableState = stacked_out;
-                        }
-                     
-                    });
-                   
-                    
+                            scope.draggableState = "stacked_out";
+                        } else if (scope.draggableState == "from_stacked_out_to_rotated" ) 
+                        {
+                            scope.draggableState = "rotated";
+                        } else if (scope.draggableState == "from_stacked_out_to_initial" ) 
+                        {
+                            scope.draggableState = "initial"; 
+                        }                
+                    });                
                     return false;
                 },
                 false
@@ -123,8 +122,15 @@ app.directive('draggable', function() {
 });
 
 
-function MainCtrl($scope, $filter,$http) {
+function MainCtrl($scope, $filter,$http,imageUrlTemplate) {
     $scope.booksOnShelf = 10;
+    $scope.getBookBackground = getBookBackground;
+
+
+
+    function getBookBackground(partUrl){
+        return 'url(' + imageUrlTemplate+partUrl + ')';
+    }
 
     function bookShelfs(){
         var result = [];
