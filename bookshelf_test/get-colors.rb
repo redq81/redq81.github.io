@@ -20,7 +20,10 @@ end
 
 images_colors = image_urls.map {|i| get_image_average_color(i)}
 
-colored_book_list = book_list.each {|i| i[:averageColor] = images_colors[book_list.index(i)] }
+colored_book_list = book_list.each do |i| 
+	i[:averageColor] = images_colors[book_list.index(i)]
+	i[:id] = book_list.index(i)
+end
 
 
 File.open("books.json","w") do |f|
