@@ -3,7 +3,7 @@
   
   <head>
     <meta charset="utf-8">
-    <title>Search</title>
+    <title>Book shelf</title>
     <link rel="stylesheet" href="css/ngDialog.css">
    <link rel="stylesheet" href="css/ngDialog-theme-default.css">
     <link rel="stylesheet" href="css/style.css"/>
@@ -13,6 +13,7 @@
     <div ng-controller="MainCtrl">
       <div class="sorting-buttons-wrapper">
         <ul class="sorting-options">
+          <li>Сортировать: </li>
           <li>
             <button ng-click="sortBooksBy('author')" >По автору</button>
           </li>
@@ -29,13 +30,13 @@
         <li id="book{{book.id}}" class="book" ng-click="openBookTooltip(book)"  ng-repeat="book in shelf " >
         
           <div class="book-outer-container">
-            <div class="book-wrapper" draggable draggable-state="bookState" ng-class="getStateClass(bookState)">
+            <div class="book-wrapper" draggable draggable-state="bookState" ng-class="getStateClass(bookState)" >
               <div class="book-right" ng-style= "{'background-image':getBookBackground(book.imageLink)}" >
               </div>
               <div class="book-front" ng-style= "{'background-color':book.averageColor}">
                 <div class="book-spine-wrapper">
-                  <span class="book-spine__author-name">{{book.author}}</span> 
-                  <span class="book-spine__book-title">{{book.title}}</span>
+                  <p class="book-spine__author-name">{{book.author}}</p> 
+                  <h3 class="book-spine__book-title">{{book.title}}</h3>
                 </div>
               </div>
               <div class="book-left"></div>
