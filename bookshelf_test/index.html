@@ -17,7 +17,7 @@
             <div class="book-wrapper" draggable draggable-state="bookState" ng-class="bookState">
               <div class="book-right" ng-style= "{'background-image':getBookBackground(book.imageLink)}" >
               </div>
-              <div class="book-front">
+              <div class="book-front" ng-style= "{'background-color':book.averageColor}">
                 <div class="book-spine-wrapper">
                   <span class="book-spine__author-name">{{book.author}}</span> 
                   <span class="book-spine__book-title">{{book.title}}</span>

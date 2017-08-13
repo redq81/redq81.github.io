@@ -90,8 +90,6 @@ body {
 
 .page {
     list-style: none;
-    width: 11rem;
-    height: 19rem;
     z-index: 10;
     /*transform: translateX(-6.5rem) translateY(0.5rem) translateZ(0rem) rotateY(90deg);*/
 }
