@@ -13,7 +13,6 @@ body {
     list-style: none;
     margin-top: 5rem;
     margin-bottom: 2rem;
-    border-bottom: 2px solid rgb(0,0,0);
 }
 
 .book {
@@ -303,6 +302,7 @@ body {
             animation: stuckOutBook 1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
+    cursor:s-resize;
 }
 
 
@@ -366,4 +366,10 @@ body {
     margin: 0;
     padding:0;
 }
+
+
+
+
+
+
 

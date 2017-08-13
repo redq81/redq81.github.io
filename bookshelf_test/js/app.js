@@ -69,7 +69,6 @@
                 el.addEventListener(
                     'dragend',
                     function(e) {
-                        console.log("end dragging");
                         el.removeEventListener("mousemove", getMouseDirection, false);
                         scope.$evalAsync(function () {
                             if (scope.draggableState == "from_initial_to_stacked_out" ) 
