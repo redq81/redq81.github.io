@@ -19,7 +19,6 @@ body {
     display: inline-block;
     position: relative;
     color: #fff;
-    cursor: pointer; 
     width: 2.5rem;
     height: 20rem;
     margin-right: 2rem; 
@@ -265,8 +264,20 @@ body {
     -moz-user-drag: none;
     -o-user-drag: none;
     user-drag: none;
-    cursor:-webkit-grabbing;
-    cursor:grabbing;
+  
+}
+
+.initial{
+       cursor:s-resize !important;
+}
+
+
+.stacked_out{
+     cursor:move !important;
+}
+
+.rotated{
+    cursor:e-resize !important;
 }
 
 .from_stacked_out_to_initial.book-wrapper{
@@ -302,7 +313,7 @@ body {
             animation: stuckOutBook 1s linear;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    cursor:s-resize;
+    
 }
 
 

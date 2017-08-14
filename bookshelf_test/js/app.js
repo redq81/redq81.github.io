@@ -37,11 +37,13 @@
                 el.addEventListener(
                     'dragstart',
                     function(e) {
-                        // e.preventDefault();
+                        //убираем фантом при перетаскивании
                         e.dataTransfer.setDragImage(el, -99999, -99999);
+                        //без этого не срабатывает dragend в firefox
                         e.dataTransfer.setData("text/plain", '');
+                        //смена состояний объекта при перетаскивании
                         scope.$evalAsync(function () {
-                            // console.log( mouseDirection );
+                            
                             if( mouseDirection == "down" && 
                                 scope.draggableState == "initial" )
                             {
@@ -70,6 +72,7 @@
                     'dragend',
                     function(e) {
                         el.removeEventListener("mousemove", getMouseDirection, false);
+                        //смена состояний при завершении перетаскивания
                         scope.$evalAsync(function () {
                             if (scope.draggableState == "from_initial_to_stacked_out" ) 
                             {
@@ -91,7 +94,7 @@
                     false
                 );
 
-
+                // находим направление движения мыши
                 function getMouseDirection(event) {
 
                     var deltaX = last_position.x - event.clientX,
@@ -129,14 +132,14 @@
         $scope.booksOnShelf = 10;
         $scope.books = [];
         $scope.bookShelfs = [];
+
         $scope.sortBooksBy = sortBooksBy;
         $scope.getStateClass = getStateClass;
-
-        
         $scope.getBookBackground = getBookBackground;
         $scope.openBookTooltip = openBookTooltip;
 
 
+        //получения списка книг из json файла
         var handleSuccess = function(data, status) {
             $scope.books = data;
             $scope.bookShelfs = makeBookShelfs(data);
@@ -144,6 +147,7 @@
 
         bookList.getBookList().then(handleSuccess);
 
+        //вспомогательная функция для смены статусов ри перетаскивании
         function getStateClass(state) {
             var stateClass= state;
 
@@ -153,7 +157,8 @@
 
             return stateClass;
         }
-           
+        
+        //сортировка книг
         function sortBooksBy(sortOrder){
             var sorted = [];
             switch (sortOrder) {
@@ -169,6 +174,7 @@
             $scope.bookShelfs = makeBookShelfs(sorted);
         }
 
+        //вызов всплывающей подсказки при клике на книгу
         function openBookTooltip (book) {
             $scope.book = book;
             ngDialog.open({ 
@@ -178,10 +184,12 @@
              });
         }
 
+        //получение рисунки для обложки книги
         function getBookBackground(partUrl){
             return 'url(' + imageUrlTemplate+partUrl + ')';
         }
 
+        //формирование книжных полок из общего массива книг
         function makeBookShelfs(books){
            return  _.chunk(books, $scope.booksOnShelf);
          }
