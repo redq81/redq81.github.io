@@ -643,7 +643,6 @@ input[type="text"] {
 
 .text-to-grey{
 	color: grey;
-	text-decoration: line-through;	
 }
 
 a:link { color: white; }

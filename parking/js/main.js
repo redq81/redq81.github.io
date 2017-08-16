@@ -232,7 +232,7 @@ $(function () {
 //validate phone  by mask
 
         $("#phoneNumber").inputmask({
-                            "mask":"+7(999)999-99-99",
+                            "mask":"+9(999)999-99-99",
                             "onincomplete": function(){ 
                                $("#calculate").prop("disabled", true).addClass("ui-state-disabled");},
                             "oncomplete": function(){ 
