@@ -1,0 +1,8 @@
+<div >Итого:{{ products|writeQtyWithEndings}}</div>
+
+    <div >
+    		<label>Product name: <input type="text" ng-model="product.name" /></label><br />
+		    <label>Product price: <input type="number" ng-model="product.price" /></label><br />
+		    <input type="button" ng-click="reset()" value="Reset" />
+		    <input type="button" ng-click="addProduct(product.name,product.price)" value="Add" />
+    </div>
