@@ -1,0 +1,8 @@
+body {
+  background-color: #ebebeb;
+}
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none;
+}
+
